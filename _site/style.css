@@ -1,0 +1,416 @@
+/* -------------- CSS Reset -------------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid grey; */
+}
+
+html {
+  scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
+}
+
+img {
+  max-width: 100%; /* this ensures images never break their container */
+  /* height: 30%; */
+}
+
+body {
+  /* padding-top: 3rem; */
+  color: rgb(120,120,125);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+ /* this overrides the default padding and margin on gridlex elements */
+[class*=grid] {   margin: 0;  }
+[class*=col]  {   padding: 0; }
+
+
+/* ------------ Utility Styles ---------- */
+.left     {  text-align: left;     }
+.right    {  text-align: right;    }
+.center   {  text-align: center;   }
+
+.padded   {  padding: 5%; }
+.padded-1 { padding: 10%; }
+.padded-2 { padding: 2%; }
+
+.light-bg {
+  background-color: #dfaa98;
+  color: white;
+  padding: 5rem;
+}
+
+.featured-bg {
+  background-color: #93a697;
+  color: white;
+}
+
+.bg-image {
+  background-size: cover;
+  background-position: center;
+}
+
+/* --------------- Typography ------------ */
+
+
+h2 {
+  font-size: 2.3rem;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+h3, h4, h5, h6 {
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h3 { font-size: 1.5rem;}
+h4 { font-size: 1rem;}
+
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 20px;
+  font-weight: 300;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.p2 {
+  margin-top: rem;
+  font-size: 0.9rem;
+  line-height: 20px;
+  font-weight: 300;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.highlight {
+    background-color: white;
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 2px;
+}
+
+hr { /* this is a line element */
+  border: none;
+  border-bottom: 2px solid;
+  color: #6c8070;
+  width: 2rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 10px;
+  font-weight: 300;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* ---------- Button Styles ----------- */
+
+/* .button {
+  text-decoration: none;
+  color: rgb(120,120,125);
+  border: 2px solid;
+  padding: 0.6rem 2rem;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 400;
+  transition: 0.5s;
+} */
+
+.button {
+  font-family: 'Oxygen', sans-serif;
+  display: inline-block;
+  /* reset */
+  color: inherit;
+  text-decoration: none;
+  /* styling */
+  text-transform: uppercase;
+  padding: 5px;
+  position: relative;
+}
+
+/* pseudo-elements to create fake border */
+.button:after, .button::after {
+  content: "";
+  display: block;
+  /* could also use border-top rather than background-color and width/height */
+  width: 100%;
+  height: 1px;
+  background-color: grey;
+  /* enable hover effect */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* transition */
+  transition: all 0.3s ease;
+}
+
+.button:hover:after, .button:hover::after {
+  /* shift upwards */
+  bottom: 6px;
+  /* change color */
+  background-color: #e8cf8b;
+  /* expand */
+  height: 5px;
+  /* fade */
+  opacity: 0.5;
+}
+
+.button-2 {
+  font-family: 'Oxygen', sans-serif;
+  display: inline-block;
+  border: 1px solid;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5rem 2.5rem;
+  border-color: white;
+  background-color: white;
+  color: #dfaa98;
+  transition: 0.8s;
+}
+
+.button-2:hover {
+  background-color: #dfaa98;
+  color: white;
+}
+
+/* ----------- Hamburger Nav -------------- */
+.active {
+  color: white;
+}
+
+.hamburger {
+  position: absolute;
+  font-size: 3rem;
+  line-height: 0.14;
+  right: 1rem;
+  top: 1rem;
+  z-index: 3;
+}
+
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+  bottom: 0;
+  background-color: rgb(60,60,65);
+  padding: 10%;
+}
+.mobile-nav a {
+  color: white;
+  padding: 1rem;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.fixed-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+}
+
+/*--------------- Header and Footer ------------ */
+header {
+  padding: 2% 5%;
+}
+
+
+header nav a {
+  font-family: 'Quicksand', sans-serif;
+  padding: 0rem 3rem;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  transition: 0.3s;
+}
+
+header a:hover {
+  color: #e8cf8b;
+}
+
+footer nav a {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0.8rem;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  transition: 0.5s;
+}
+
+footer nav a:hover {
+  color: #e8cf8b;
+}
+
+
+/* ---------- Font Awesome ------------ */
+.fab {        /* default styles for font awesome icons */
+  font-size: 2rem
+}
+
+
+/* ------------ Banners ------------------- */
+.banner-main {
+  background-image: url('images/banner1.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 70vh;
+}
+
+.banner-2 {
+  background-image: url('images/banner2.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 70vh;
+}
+
+.banner-3 {
+  background-image: url('images/banner3.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 70vh;
+}
+
+.banner-4 {
+  background-image: url('images/banner4.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 70vh;
+}
+
+.white-text {
+  color: white;
+}
+
+
+
+/* ------------------ Background Photos ---------------- */
+img {
+  width: 500px;
+}
+
+.headshot {
+  width: 800px;
+  box-shadow: 30px 30px #e8cf8b;
+}
+
+.bump-down {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: -10rem;
+  margin-right:1rem;
+  z-index:2;
+}
+
+
+.pck-1 {
+  background-image: url('images/1.png');
+  background-size: cover;
+  display: inline-block;
+  background-position: center;
+  max-width: 20%;
+  width: 700px;
+  height: 700px;
+}
+
+.pck-2 {
+  background-image: url('images/2.png');
+  background-size: cover;
+  display: inline-block;
+  background-position: center;
+  max-width: 20%;
+  width: 700px;
+  height: 700px;
+}
+
+.pck-3 {
+  background-image: url('images/3.png');
+  background-size: cover;
+  display: inline-block;
+  background-position: center;
+  max-width: 20%;
+  width: 700px;
+  height: 700px;
+}
+
+.ac-logo {
+  background-image: url('images/ac-logo.png');
+  background-size: cover;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+  min-height: 60vh;
+}
+
+/* ----------- Contact Form ----------- */
+input,
+textarea {
+  border-style: solid;
+  border: 2px solid rgb(200, 200, 205);
+  padding: 0.8em;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  vertical-align: top;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid #e8cf8b;
+  /* featured color */
+}
+
+textarea {
+  min-height: 7rem;
+}
+
+input[type="submit"] {
+  /* width: auto; */
+  display: block;
+}
+
+form [class*=col-] {
+  padding: 5px;
+}
+
+ @media(max-width:768px) {
+   .email-signup input {
+     width: 100%;
+     max-width: 100%;
+   }
+ }

@@ -2,4 +2,176 @@
 layout: default
 title: Homepage
 ---
-<h1>Welcome to your homepage!</h1>
+<title>Verdi Studio</title>
+<!------ This is where our main content starts  ------->
+<body>
+ <!-- Header -->
+ <header class="grid banner-front-page">
+     <div class="col-4">
+         <i class="fa-brands fa-instagram"></i>
+     </div>
+     <nav class="col-8 mob-hide txtright">
+         <a href=""> About </a>
+         <a href=""> Portfolio </a>
+         <a href=""> Contact</a>
+     </nav>
+     <div class="col-8 right">
+         <a class="hamburger-button mob-show"> 
+             <div class="container"onclick="myFunction(this)">
+                 <div class="bar1"></div>
+                 <div class="bar2"></div>
+                 <div class="bar3"></div>
+             </div> 
+         </a>
+     </div>
+
+     <section class="grid txtcenter">
+         <div class="col-12 padded">
+             <img src="images/vslogo-transparent.png" alt="">
+         </div>
+     </section>
+ </header>
+
+ <div class="mobile-menu"> 
+     <nav> 
+         <a href=""> About </a>
+         <a href=""> Portfolio </a>
+         <a href=""> Contact </a>
+     </nav>
+ </div>
+ 
+
+ <!-- Section 1 - Welcome -->
+ <section class="grid light-bg padded">
+     <div class="col-8 padded">
+         <h1>~ Bespoke web design and development for the wildest dreamers ~</h1>
+         <p>Here at Verdi Studio, we are first and foremost: storytellers. There’s nothing we love more than swapping tales over a glass of something sweet (usually a hot chocolate, but sometimes a cocktail).</p>
+         <p> That’s why we’re passionate about partnering with <i>small businesses and creatives</i> to help weave the threads of their tale together into thoughtfully designed <i>custom-coded websites</i>. Just like you, they’re one of a kind.</p>
+     </div>
+     <!-- <div class="col- bg-sunnies"></div> -->
+     <div class="col-4 bg-ashby"></div>
+ </section>
+
+
+ <!-- Section 2 - Easy as 123 -->
+ <section class="grid featured-bg padded txtcenter">
+     <div class="col-12">
+         <h1>Let's create something beautiful</h1>
+     </div>
+     <div class="col-4 padded">
+         <h3>01</h3>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur sunt accusantium maxime quas optio doloremque soluta, voluptatibus atque architecto, dolores repellendus, sequi ipsa fugiat? Odit animi ipsa neque doloremque consectetur.</p>
+     </div>
+     <div class="col-4 padded">
+         <h3>02</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aliquid nisi dolorem, porro, itaque illo quaerat eveniet, perspiciatis aperiam id at sapiente!</p>
+     </div>
+     <div class="col-4 padded">
+         <h3>03</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aliquid nisi dolorem, porro, itaque illo quaerat eveniet, perspiciatis aperiam id at sapiente!</p>
+     </div>
+     <div class="col-12">
+         <a href="" class="button"> Find out more </a>
+     </div>
+ </section>
+
+
+ <!-- Section 3 - The Portfolio -->
+ <section class="grid light-bg padded mob-padded-0 txtcenter">
+     <div class="col-12 padded">
+         <h1> The Portfolio </h1> 
+     </div>
+
+     <div class="grid horizontal-scroll"> 
+       <div class="col-4_xs-11 padded-05">
+         <!--   Card 1     -->
+         <div class="card">
+           <img src="images/1.png">
+         </div>
+       </div> 
+       
+       <!--  Card 2    -->
+       <div class="col-4_xs-11 padded-05"> 
+         <div class="card">
+           <img src="images/2.png">
+         </div>
+       </div> 
+       
+       <!--   Card 3   -->
+       <div class="col-4_xs-11 padded-05"> 
+         <div class="card">
+           <img src="images/3.png">
+         </div>   
+       </div> 
+
+       <!--   Card 4   -->
+       <div class="col-4_xs-11 padded-05"> 
+         <div class="card">
+           <img src="images/4.png">
+         </div>   
+       </div> 
+     </div> 
+
+     <div class="col-12">
+         <a href="" class="button"> See more </a>
+     </div>
+   </section> 
+
+   <!-- Slick Carousel -->
+   <section>
+     <div class="slider-container">
+         <div class="slider-item">1</div>
+         <div class="slider-item">2</div>
+         <div class="slider-item">3</div>
+         <div class="slider-item">4</div>
+      </div>
+   </section>
+
+
+
+ <!-- Section 4 - Enquire Now -->
+ <section class="grid padded banner-contact">
+     <div class="col-12 txtcenter">
+         <h1>Enquire Now</h1>
+     </div>
+     <div class="col-10 padded">
+         <p>Name</p>
+         <p>Email</p>
+         <p>Message</p>
+     </div>
+ </section>
+
+ <!-- Section 5 - Let's Connect -->
+ <section class="grid light-bg padded">
+     <div class="col-12 txtcenter">
+         <h1>Let's Connect</h1>
+     </div>
+     <div class="col-3 padded">
+         <p>Picture go here</p>
+     </div>
+     <div class="col-3 padded">
+         <p>Picture go here</p>
+     </div>
+     <div class="col-3 padded">
+         <p>Picture go here</p>
+     </div>
+     <div class="col-3 padded">
+         <p>Picture go here</p>
+     </div>
+ </section>
+
+ <!-- Footer -->
+ <footer class="featured-bg padded">
+
+ </footer>
+  <!--- Add jQuery --->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-------------- custom javascript files -------------->
+  <script src="/scripts.js"></script>     
+
+  <!--- This is Slick --->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+

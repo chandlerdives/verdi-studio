@@ -12,17 +12,22 @@ ar allPanels = $('.accordion > dd').hide();
     return false;
 	});
 
-    AOS.init();
 
-// hamburger button 
-    $('.hamburger-button').click(function(){
-      $('.mobile-menu').slideToggle(100);
-      $(this).toggleClass('active');
+  AOS.init();
+
+
+  // hamburger button
+  $('.hamburger-button').click(function(){
+    $('.mobile-menu').slideToggle(100);
+    $(this).toggleClass('active');
   });
   
   function myFunction(x) {
     x.classList.toggle("change");
   }
+
+
+
 
 //   Slick
 $('.slider-container').slick({

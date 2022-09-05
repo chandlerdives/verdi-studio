@@ -260,7 +260,7 @@
   /* this is the nav menu for mobile */
   .mobile-menu {
       display: none; 
-      background-color: #CEE7F1; 
+      background-color: #CCD4AE; 
       padding: 2%;
       position: fixed; 
       top: 0;
@@ -447,14 +447,6 @@
 }
 
 /* ------- Slick Carousel --------- */
-.slick-next::before, .slick-prev::before {
-  font-family: slick;
-  font-size: 20px;
-  line-height: 1;
-  opacity: .75;
-  color: #fff;
-}
-
 .slider-container {
   padding: 5%;
   border: 2px solid lightblue;
@@ -463,4 +455,42 @@
 .slider-item {
   padding: 1rem;
   border: 2px solid orange;
+  display: none;
+  width: 200%;
+}
+
+.slider-item:first-child {
+  display: block;
+}
+
+.slick-next::before, .slick-prev::before {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: black;
+}
+
+.slick-prev {  left: 2%; }
+.slick-next {  right: 2%; }
+.slick-slide { width: 300%; }
+
+.slick-dots {
+  bottom: 12%;
+  left: 0; /* This align the dots perfectly to the center, do not delete */
+}
+
+/* Background Image Styles */
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://www.instituteofcode.com/nala.jpg');
+}
+
+.bg-houdini {
+  background-image: url('https://www.instituteofcode.com/houdini.jpg');
+}
+
+.landscape {
+  padding-bottom: 66%;
 }

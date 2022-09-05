@@ -4,25 +4,34 @@ title: Verdi Studio
 ---
 <title>Verdi Studio</title>
 <!------ This is where our main content starts  ------->
-<body>
  <!-- Header -->
-    <header class="grid banner-front-page">
-        <div class="col-4">
-            <i class="fa-brands fa-instagram"></i>
-        </div>
-        <nav class="col-8 mob-hide txtright">
-            <a href=""> About </a>
-            <a href=""> Portfolio </a>
-            <a href=""> Contact</a>
-        </nav>
-        <div class="col-8 right">
-            <a class="hamburger-button mob-show"> 
-                <div class="container"onclick="myFunction(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div> 
-            </a>
+    <section class="banner-front-page">
+        <header class="grid">
+            <div class="col-4">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <nav class="col-8 mob-hide txtright">
+                <a href=""> About </a>
+                <a href=""> Portfolio </a>
+                <a href=""> Contact</a>
+            </nav>
+            <div class="col-8 right">
+                <a class="hamburger-button mob-show"> 
+                    <div class="container"onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div> 
+                </a>
+            </div>
+        </header>
+    
+        <div class="mobile-menu"> 
+            <nav> 
+                <a href=""> About </a>
+                <a href=""> Portfolio </a>
+                <a href=""> Contact </a>
+            </nav>
         </div>
 
         <section class="grid txtcenter">
@@ -30,23 +39,14 @@ title: Verdi Studio
                 <img src="images/vslogo-transparent.png" alt="">
             </div>
         </section>
-    </header>
-
-    <div class="mobile-menu"> 
-        <nav> 
-            <a href=""> About </a>
-            <a href=""> Portfolio </a>
-            <a href=""> Contact </a>
-        </nav>
-    </div>
- 
-
+    </section>
+    
     <!-- Section 1 - Welcome -->
     <section class="grid light-bg padded">
         <div class="col-8 padded">
             <h1>~ Bespoke web design and development for the wildest dreamers ~</h1>
-            <p>Here at Verdi Studio, we are first and foremost: storytellers. There’s nothing we love more than swapping tales over a glass of something sweet (usually a hot chocolate, but sometimes a cocktail).</p>
-            <p> That’s why we’re passionate about partnering with <i>small businesses and creatives</i> to help weave the threads of their tale together into thoughtfully designed <i>custom-coded websites</i>. Just like you, they’re one of a kind.</p>
+            <p>Here at Verdi Studio, we are first and foremost: storytellers. There's nothing we love more than swapping tales over a glass of something sweet (usually a hot chocolate, but sometimes a cocktail).</p>
+            <p> That's why we're passionate about partnering with <i>small businesses and creatives</i> to help weave the threads of their tale together into thoughtfully designed <i>custom-coded websites</i>. Just like you, they're one of a kind.</p>
         </div>
         <!-- <div class="col- bg-sunnies"></div> -->
         <div class="col-4 bg-ashby"></div>
@@ -55,20 +55,24 @@ title: Verdi Studio
 
     <!-- Section 2 - Easy as 123 -->
     <section class="grid featured-bg padded txtcenter">
-        <div class="col-12">
+        <div class="col-1"></div>
+        <div class="col-10-middle">
             <h1>Let's create something beautiful</h1>
+            <p>We believe in giving our full attention, which is why we enjoy taking on projects one at a time and delivering our clients their website within 3 weeks. It's as easy and one, two, three!</p>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-4 padded">
+            <h3 data-aos="fade-in">01</h3>
+            <p data-aos="fade-in">Lets start our journey with the planning stage ~ Say hello via an initial email and tell us all about your business and the kind of website you are wishing for. Include as much information as you like; we'd love to hear about your passion!</p>
+            <p>We'll send a message back with a little bit more about us, a quote for your consideration and a guide to what usually happens next!</p>
         </div>
         <div class="col-4 padded">
-            <h3>01</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur sunt accusantium maxime quas optio doloremque soluta, voluptatibus atque architecto, dolores repellendus, sequi ipsa fugiat? Odit animi ipsa neque doloremque consectetur.</p>
+            <h3 data-aos="fade-in">02</h3>
+            <p data-aos="fade-in">This is what we refer to as the design stage and where we want to really discover what you're all about! You'll book a 3 week time slot on my calendar (this is when all of the magic comes together) and in the meantime complete a website design questionnaire to help us narrow down your design aesthetics. We kindly request that you start collecting imagery and copy that you'd like to include on the site too, ready for the final stage.</p>
         </div>
         <div class="col-4 padded">
-            <h3>02</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aliquid nisi dolorem, porro, itaque illo quaerat eveniet, perspiciatis aperiam id at sapiente!</p>
-        </div>
-        <div class="col-4 padded">
-            <h3>03</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aliquid nisi dolorem, porro, itaque illo quaerat eveniet, perspiciatis aperiam id at sapiente!</p>
+            <h3 data-aos="fade-in">03</h3>
+            <p data-aos="fade-in">This is the most exciting part ~ designing and building your website! This process is the 3 week magic, starting with finalising the colour palette, moodboard, font choices and wireframe in the first few days. Once you give the green light we will design and build your website, using imagery and copy you have already provided. In the final week you'll have access to the site and we will start revisions for the next few days. Finally, it will be time for us to hand you the keys!</p>
         </div>
         <div class="col-12">
             <a href="" class="button"> Find out more </a>
@@ -78,56 +82,33 @@ title: Verdi Studio
 
     <!-- Section 3 - The Portfolio -->
     <section class="grid light-bg padded mob-padded-0 txtcenter">
-        <div class="col-12 padded">
+        <div class="col-12">
             <h1> The Portfolio </h1> 
         </div>
+    </section>     
+        
+    <section class="light-bg padded-05">
+        <div class="slider-container">
+            <div class="slider-item" style="width: 100%; display: inline-block;">
+              <div class="bg-image landscape"></div>
+            </div>
+            <div class="slider-item">
+              <div class="bg-image bg-houdini landscape"></div>
+            </div>
+            <div class="slider-item">
+              <div class="bg-image landscape"></div>
+            </div>
+            <div class="slider-item">
+              <div class="bg-image bg-houdini landscape"></div>
+            </div>
+        </div>
+    </section>    
 
-        <div class="grid horizontal-scroll"> 
-            <!--   Card 1     -->
-            <div class="col-4_xs-11 padded-05">
-                <div class="card">
-                    <img src="images/1.png">
-                </div>
-            </div> 
-       
-            <!--  Card 2    -->
-            <div class="col-4_xs-11 padded-05"> 
-                <div class="card">
-                    <img src="images/2.png">
-                 </div>
-            </div> 
-       
-            <!--   Card 3   -->
-            <div class="col-4_xs-11 padded-05"> 
-                <div class="card">
-                    <img src="images/3.png">
-                </div>   
-            </div> 
-
-            <!--   Card 4   -->
-            <div class="col-4_xs-11 padded-05"> 
-                <div class="card">
-                    <img src="images/4.png">
-                </div>   
-            </div> 
-        </div> 
-
+    <section class="grid light-bg padded mob-padded-0 txtcenter">  
         <div class="col-12">
             <a href="" class="button"> See more </a>
         </div>
     </section> 
-
-    <!-- Slick Carousel -->
-    <section>
-        <div class="slider-container">
-            <div class="slider-item">1</div>
-            <div class="slider-item">2</div>
-            <div class="slider-item">3</div>
-            <div class="slider-item">4</div>
-        </div>
-    </section>
-
-
 
     <!-- Section 4 - Enquire Now -->
     <section class="grid padded banner-contact">

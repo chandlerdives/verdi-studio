@@ -26,6 +26,7 @@ var allPanels = $('.accordion > dd').hide();
     centerPadding: '60px',
     slidesToShow: 3,
     dots: true,
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 768,

@@ -339,7 +339,7 @@
    
   /* ------------------ Photos ---------------- */
   img {
-    max-width: 80%;
+    max-width: 100%;
   }
 
   /* .bg-sunnies {
@@ -453,10 +453,14 @@
 }
 
 .slider-item {
-  padding: 1rem;
-  border: 2px solid orange;
+  padding: 0.5rem;
   display: none;
-  width: 200%;
+  width: 100%;
+}
+
+.slider-item img {
+  height: 300px;
+  width: auto;
 }
 
 .slider-item:first-child {
@@ -480,17 +484,12 @@
   left: 0; /* This align the dots perfectly to the center, do not delete */
 }
 
+
 /* Background Image Styles */
-.bg-image {
+.bg-slick {
   background-size: cover;
   background-position: center;
-  background-image: url('https://www.instituteofcode.com/nala.jpg');
+  background-image: url('images/1.png');
 }
 
-.bg-houdini {
-  background-image: url('https://www.instituteofcode.com/houdini.jpg');
-}
 
-.landscape {
-  padding-bottom: 66%;
-}

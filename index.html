@@ -5,15 +5,17 @@ title: Verdi Studio
 <title>Verdi Studio</title>
 <!------ This is where our main content starts  ------->
  <!-- Header -->
-    <section class="banner-front-page">
+    <section class="banner-front-page border">
         <header class="grid">
             <div class="col-4">
-                <i class="fa-brands fa-instagram"></i>
+               
             </div>
             <nav class="col-8 mob-hide txtright">
-                <a href=""> About </a>
-                <a href=""> Portfolio </a>
-                <a href=""> Contact</a>
+                <a href="about.html"> About Us </a>
+                <a href="process.html"> The Process </a>
+                <a href=""> Our Work </a>
+                <a href=""> Contact Us </a>
+                <i class="fa-brands fa-instagram"></i>
             </nav>
             <div class="col-8 right">
                 <a class="hamburger-button mob-show"> 
@@ -28,9 +30,10 @@ title: Verdi Studio
     
         <div class="mobile-menu"> 
             <nav> 
-                <a href=""> About </a>
-                <a href=""> Portfolio </a>
-                <a href=""> Contact </a>
+                <a href="about.html"> About </a>
+                <a href="process.html"> Our Process </a>
+                <a href=""> Our Work </a>
+                <a href=""> Contact Us </a>
             </nav>
         </div>
 
@@ -42,23 +45,25 @@ title: Verdi Studio
     </section>
     
     <!-- Section 1 - Welcome -->
-    <section class="grid light-bg padded">
+    <section class="grid light-bg padded border">
         <div class="col-8 padded">
             <h1>~ Bespoke web design and development for the wildest dreamers ~</h1>
             <p>Here at Verdi Studio, we are first and foremost: storytellers. There's nothing we love more than swapping tales over a glass of something sweet (usually a hot chocolate, but sometimes a cocktail).</p>
             <p> That's why we're passionate about partnering with <i>small businesses and creatives</i> to help weave the threads of their tale together into thoughtfully designed <i>custom-coded websites</i>. Just like you, they're one of a kind.</p>
         </div>
         <!-- <div class="col- bg-sunnies"></div> -->
-        <div class="col-4 bg-ashby"></div>
+        <div class="col-4 bg-chandler">
+            <!-- <img src="images/chandler.png" alt=""> -->
+        </div>
     </section>
 
 
     <!-- Section 2 - Easy as 123 -->
-    <section class="grid featured-bg padded txtcenter">
+    <section class="grid featured-bg padded txtcenter border">
         <div class="col-2"></div>
         <div class="col-8-middle">
             <h1>Let's create something beautiful</h1>
-            <p>We believe in giving our full attention, which is why we enjoy taking on projects one at a time and delivering our clients their website within 3 weeks. Three, as we say, is our magic number!</p>
+            <p>We believe in giving our full attention, which is why we enjoy taking on projects one at a time and delivering our clients their website within three weeks. Three, as we say, is our magic number!</p>
         </div>
         <div class="col-2"></div>
         <div class="col-4 padded" data-aos="fade-in">
@@ -71,7 +76,7 @@ title: Verdi Studio
         </div>
         <div class="col-4 padded" data-aos="fade-in">
             <h3>03</h3>
-            <p>The most exciting part ~ designing and building your website! In 3 weeks we'll go from moodboards and wireframes to a fully custom-coded website, all set up and ready to go.</p>
+            <p>The most exciting part ~ designing and building your website! In three weeks we'll go from moodboards and wireframes to a fully custom-coded website, all set up and ready to go.</p>
         </div>
         <div class="col-12">
             <a href="process.html" class="button"> Find out more </a>
@@ -80,49 +85,54 @@ title: Verdi Studio
 
 
     <!-- Section 3 - The Portfolio -->
-    <section class="grid light-bg padded mob-padded-0 txtcenter">
+    <section class="grid light-bg padded mob-padded-0 txtcenter border">
         <div class="col-12">
-            <h1> The Portfolio </h1> 
+            <h1> Featured Work </h1> 
+        </div>
+        <!-- gallery -->
+        <div class="col-4">
+            <img class="grayscale" src="images/mock-aroux.png" alt="">
+        </div>
+        <div class="col-4">
+            <img class="grayscale" src="images/mock-asanas.png" alt="">
+        </div>
+        <div class="col-4">
+            <img class="grayscale" src="images/mock-moongazy.png" alt="">
+        </div>
+        <!-- button -->
+        <div class="col-12">
+            <a href="" class="button"> View our Portfolio </a>
         </div>
     </section>     
-        
-    <section class="light-bg padded-05">
-        <div class="slider-container">
-            <div class="slider-item">
-                <img src="images/1.png" alt="">
-            </div>
-            <div class="slider-item">
-                <img src="images/2.png" alt="">
-            </div>
-            <div class="slider-item">
-                <img src="images/3.png" alt="">
-            </div>
-            <div class="slider-item">
-                <img src="images/4.png" alt=""> 
-            </div>
-        </div>
-    </section>    
-
-    <section class="grid light-bg padded mob-padded-0 txtcenter">  
-        <div class="col-12">
-            <a href="" class="button"> See more </a>
-        </div>
-    </section> 
+          
 
     <!-- Section 4 - Enquire Now -->
-    <section class="grid padded banner-contact">
+    <section class="grid padded banner-contact border">
         <div class="col-12 txtcenter">
             <h1>Enquire Now</h1>
         </div>
-        <div class="col-10 padded">
-            <p>Name</p>
-            <p>Email</p>
-            <p>Message</p>
-        </div>
+        <!-- form -->
+        <div class="col-12-middle padded-05">
+            <form class="grid-center" action="https://formspree.io/hello@company.com" method="POST">
+              <div class="col-12 padded-05">
+                <input type="text" name="name" placeholder="Your Name">
+              </div>
+              <div class="col-12 padded-05">
+                <input type="email" name="_replyto" placeholder="Your Email">
+              </div>
+              <div class="col-12 padded-05">
+                <textarea placeholder="Your Message"></textarea>
+                <input type="submit" value="Send" class="button">
+              </div>
+            </form>
+          </div>
+        
     </section>
 
+    
+
     <!-- Section 5 - Let's Connect -->
-    <section class="grid light-bg padded">
+    <section class="grid light-bg padded border">
         <div class="col-12 txtcenter">
             <h1>Let's Connect</h1>
         </div>

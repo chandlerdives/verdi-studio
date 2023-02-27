@@ -39,14 +39,22 @@
   /* bg-colours  */
   .featured-bg { background-color: #CCD4AE; }
   .light-bg    { background-color: #F8F5F1; }
+  .dark-bg     { background-color: #5F6B36; }
 
+  .border {
+    border-bottom: 1px solid #484848;
+  }
+
+  .whitetxt {
+    color: white;
+  }
 
   
   
   /* --------------- Typography ------------ */
   h1 {
     font-family: 'Julius Sans One', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     line-height: 1;
     margin-bottom: 1.5rem;
     color: #5F6B36;
@@ -209,6 +217,7 @@
     color: #D09752;
   }
 
+
     /* ----------- Hamburger Nav -------------- */
   /* this is the button which changes into an x */
   .container {
@@ -313,8 +322,7 @@
   }
 
   .fa-solid, .fa-brands {        
-    font-size: 1rem;
-    font-family: 'Font Awesome 5 Free';
+    font-size: 1.5rem;
     margin-bottom: 2rem;
     color: #484848;
   }
@@ -333,25 +341,22 @@
     background-image: url(images/banner-contact-me.png);
     background-size: cover;
     background-position: center;
-    background-attachment: scroll;
+    background-attachment: fixed;
   }
+
+  .banner-about {
+    background-image: url(images/about-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
 
    
   /* ------------------ Photos ---------------- */
   img {
     max-width: 100%;
   }
-
-  /* .bg-sunnies {
-    background-image: url(images/sunnies.jpeg);
-    background-size: cover;
-    background-position: center;
-    max-height: 30vh;
-    margin-top: -10rem;
-    margin-left: -11rem;
-    margin-bottom: 1rem;
-    z-index: 2;
-  } */
 
   .bg-ashby {
     background-image: url(images/ashby.JPG);
@@ -364,6 +369,26 @@
     border-radius: 46% 46% 0% 0%;
     z-index: 2;
   }
+
+  .bg-chandler {
+    background-image: url(images/chandler.png);
+    background-size: cover;
+    background-position: center;
+    max-width: 400px;
+  }
+
+  .grayscale {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+
+  .grayscale:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+  
 
   
 
@@ -407,6 +432,19 @@
   .accordion dt.open::after {
     transform:rotate(45deg);
   }
+
+  /* ------------ Form ----------- */
+  
+  input, textarea {
+    font-family: 'Lato', sans-serif; 
+    border-style: solid;
+    border: 2px solid #c8c8cd;
+    padding: 0.8em;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    vertical-align: top;
+}
   
 
   /* ----------- Card Styles ----------- */

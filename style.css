@@ -79,7 +79,7 @@
    
   p {
     font-family: 'Lato', sans-serif;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     font-size: 1rem;
     font-weight: 300;
     line-height: 25px;
@@ -322,8 +322,9 @@
   }
 
   .fa-solid, .fa-brands {        
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
+    margin-right: 0.5rem;
     color: #484848;
   }
 

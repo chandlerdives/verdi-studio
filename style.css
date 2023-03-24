@@ -361,6 +361,13 @@
     background-attachment: fixed;
   }
 
+  .background-moon {
+    background-image: url(images/moon-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
    
   /* ------------------ Photos ---------------- */
   img {

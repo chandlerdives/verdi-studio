@@ -368,6 +368,13 @@
     background-attachment: fixed;
   }
 
+  .background-aap {
+    background-image: url(images/aap-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
    
   /* ------------------ Photos ---------------- */
   img {

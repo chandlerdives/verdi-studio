@@ -375,6 +375,13 @@
     background-attachment: fixed;
   }
 
+  .background-asana {
+    background-image: url(images/asana-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
    
   /* ------------------ Photos ---------------- */
   img {

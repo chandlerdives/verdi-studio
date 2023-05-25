@@ -46,6 +46,10 @@
     border-bottom: 1px solid #484848;
   }
 
+  .border-around {
+    border: 1px solid #484848;
+  }
+
   .whitetxt {
     color: white;
   }
@@ -389,6 +393,13 @@
     background-attachment: fixed;
   }
 
+  .background-hand {
+    background-image: url(images/hand-on-paper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+  }
+
   .background-01 {
     background-image: url(images/01.png);
     background-size: cover;
@@ -429,7 +440,15 @@
   }
 
   .bg-chandler {
-    background-image: url(images/chandler.png);
+    background-image: url(images/chandler.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #484848;
+    max-width: 400px;
+  }
+
+  .bg-hand-paper {
+    background-image: url(images/hand-on-paper.jpg);
     background-size: cover;
     background-position: center;
     max-width: 400px;

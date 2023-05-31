@@ -421,24 +421,6 @@
     background-attachment: scroll
   }
 
-   
-  /* ------------------ Photos ---------------- */
-  img {
-    max-width: 100%;
-  }
-
-  .bg-ashby {
-    background-image: url(images/ashby.JPG);
-    background-size: cover;
-    background-position: center;
-    max-width: 200px;
-    margin-top: -7rem;
-    margin-left: rem;
-    margin-bottom: 1rem;
-    border-radius: 46% 46% 0% 0%;
-    z-index: 2;
-  }
-
   .bg-chandler {
     background-image: url(images/chandler.jpg);
     background-size: cover;
@@ -448,10 +430,27 @@
   }
 
   .bg-hand-paper {
-    background-image: url(images/hand-on-paper.jpg);
+    background-image: url(images/paper-hand.jpg);
     background-size: cover;
     background-position: center;
+    border: 1px solid #484848;
     max-width: 400px;
+  }
+
+  .bg-laptop {
+    background-image: url(images/laptopsq.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #484848;
+    max-width: 400px;
+  }
+
+
+  
+   
+  /* ------------------ Photo Edits ---------------- */
+  img {
+    max-width: 100%;
   }
 
   .grayscale {
@@ -466,6 +465,7 @@
     filter: grayscale(0);
   }
   
+
 
   
 

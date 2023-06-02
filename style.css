@@ -35,24 +35,22 @@
   .padded-05  { padding: 0.5rem }
 
   .relative {position: relative;}
-  
  
   /* bg-colours  */
   .featured-bg { background-color: #CCD4AE; }
   .light-bg    { background-color: #F8F5F1; }
   .dark-bg     { background-color: #5F6B36; }
 
-  .border {
-    border-bottom: 1px solid #484848;
-  }
+  /* borders */
+  .border          { border-bottom: 1px solid #484848; }
+  .border-around   { border: 1px solid #484848; }
+  .border-right    { border-right: 1px solid #484848; }
 
-  .border-around {
-    border: 1px solid #484848;
-  }
+  /* bump */
+  .bump-right { margin-right: -11rem; }
+  .bump-left  { margin-left: -11rem; }
 
-  .whitetxt {
-    color: white;
-  }
+  .whitetxt { color: white; }
 
   
   
@@ -141,41 +139,18 @@
   /* ------- Button 2 ------- */
   .button-2 {
     font-family: 'Lato', sans-serif;
-    display: inline-block;
-    /* reset */
+    display: block;
     color: inherit;
     text-decoration: none;
-    /* styling */
     text-transform: uppercase;
     padding: 5px;
     position: relative;
+    transition: 0.5s;
   }
   
-  /* pseudo-elements to create fake border */
-  .button-2:after, .button-2::after {
-    content: "";
-    display: block;
-    /* could also use border-top rather than background-color and width/height */
-    width: 100%;
-    height: 1px;
+  .button-2:hover {
+    color: white;
     background-color: #D09752;
-    /* enable hover effect */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    /* transition */
-    transition: all 0.3s ease;
-  }
-  
-  .button-2:hover:after, .button-2:hover::after {
-    /* shift upwards */
-    bottom: 6px;
-    /* change color */
-    background-color: #D09752;
-    /* expand */
-    height: 5px;
-    /* fade */
-    opacity: 0.5;
   }
   
   
@@ -364,6 +339,13 @@
     background-attachment: fixed;
   }
 
+  .banner-values {
+    background-image: url(images/values-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
   /* ---------- Background Images ------------ */
   .background-aroux {
     background-image: url(images/aroux-background.jpg);
@@ -453,6 +435,10 @@
     max-width: 100%;
   }
 
+  .img-sm {
+    max-width: 80%;
+  }
+
   .grayscale {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -465,7 +451,7 @@
     filter: grayscale(0);
   }
   
-
+  .instagram-grid-container 
 
   
 
@@ -515,7 +501,7 @@
   input, textarea {
     font-family: 'Lato', sans-serif; 
     border-style: solid;
-    border: 2px solid #c8c8cd;
+    border: 0.5px solid #484848;
     padding: 0.8em;
     display: block;
     width: 100%;

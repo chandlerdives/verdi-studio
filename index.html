@@ -5,17 +5,18 @@ title: Verdi Studio
 <title>Verdi Studio</title>
 <!------ This is where our main content starts  ------->
  <!-- Header -->
-    <section class="banner-front-page border">
-        <header class="grid">
-            <div class="col-4">
-               
-            </div>
-            <nav class="col-8 mob-hide txtright">
+    <section class="banner-front-page">
+        <header class="grid-middle">
+            <nav class="col-4 txtright mob-hide">
                 <a href="about.html"> About Us </a>
                 <a href="process.html"> The Process </a>
+            </nav>
+            <div class="col-4 mob-hide txtcenter">
+                <img src="images/vslogo-darker.png" alt="">
+            </div>
+            <nav class="col-4 txt left mob-hide">
                 <a href="portfolio.html"> Our Work </a>
                 <a href=""> Contact Us </a>
-                <i class="fa-brands fa-instagram"></i>
             </nav>
             <div class="col-8 right">
                 <a class="hamburger-button mob-show"> 
@@ -37,57 +38,77 @@ title: Verdi Studio
             </nav>
         </div>
 
-        <section class="grid txtcenter">
-            <div class="col-12 padded" data-aos="fade-in">
-                <img src="images/vslogo-transparent.png" alt="">
+        <section class="grid padded-13 txtcenter">
+            <div class="col-1"></div>
+            <div class="col-10" data-aos="fade-in">
+                <h1>Bespoke <i>and</i> everlasting websites for the <i>soulful</i> brands and creators</h1>
+                <a href="" class="button">Let's Work Together</a>
             </div>
+            <div class="col-1"></div>
         </section>
     </section>
     
     <!-- Section 1 - Welcome -->
-    <section class="grid light-bg padded border">
-        <div class="col-8 padded">
-            <h1>~ Bespoke web design and development for the wildest dreamers ~</h1>
+    <div class="col-12 light-bg"><img src="images/page-border.png" alt=""></div>
+    <section class="grid padded light-bg">
+        <div class="col-8-middle padded">
+            <h1>Something catchy here</h1>
             <p>Here at Verdi Studio, we are first and foremost: storytellers. There's nothing we love more than swapping tales over a glass of something sweet (usually a hot chocolate, but sometimes a cocktail).</p>
             <p> That's why we're passionate about partnering with <i>small businesses and creatives</i> to help weave the threads of their tale together into thoughtfully designed <i>custom-coded websites</i>. Just like you, they're one of a kind.</p>
             <a href="process.html" class="button"> Learn More </a>
         </div>
-        <div class="col-4">
-            <img src="images/homepage.jpg" alt="">
-        </div>
+        <div class="col-4"><img src="images/homepage-main-pic.png" alt=""></div>
     </section>
+    <div class="col-12 light-bg"><img src="images/page-border.png" alt=""></div>
 
 
     <!-- Section 2 - Easy as 123 -->
-    <section class="grid featured-bg padded txtcenter border">
+    <section class="grid featured-bg padded txtcenter">
         <div class="col-2"></div>
         <div class="col-8-middle">
-            <h1>Let's create something beautiful</h1>
+            <h2>Let's create something beautiful</h2>
             <p>We believe in giving our full attention, which is why we enjoy taking on projects one at a time and delivering our clients their website within three weeks. Three, as we say, is our magic number!</p>
         </div>
         <div class="col-2"></div>
+        <!-- border boxes -->
         <div class="col-4 padded" data-aos="fade-in">
-            <h3>01</h3>
-            <p>Lets start our journey with the planning stage ~ Say hello via an initial email and tell us all about your wonderful business and the kind of website you are looking for.</p>
+            <div class="border padded">
+                <h4>I.</h4>
+                <p>Lets start our journey with the planning stage ~ Say hello via an initial email and tell us all about your wonderful business and the kind of website you are looking for.</p>
+            </div>
         </div>
         <div class="col-4 padded" data-aos="fade-in">
-            <h3>02</h3>
-            <p>This is what we refer to as the collaboration stage, where you will work with us to pull together all the information and materials we need for the real magic to happen next.</p>
+            <div class="border padded">
+                <h4>II.</h4>
+                <p>This is what we refer to as the collaboration stage, where you will work with us to pull together all the information and materials we need for the real magic to happen next.</p>
+            </div>
         </div>
         <div class="col-4 padded" data-aos="fade-in">
-            <h3>03</h3>
-            <p>The most exciting part ~ designing and building your website! In three weeks we'll go from moodboards and wireframes to a fully custom-coded website, all set up and ready to go.</p>
+            <div class="border padded">
+                <h4>III.</h4>
+                <p>The most exciting part ~ designing and building your website! In three weeks we'll go from moodboards and wireframes to a fully custom-coded website, all set up and ready to go.</p>
+            </div>
         </div>
         <div class="col-12">
             <a href="process.html" class="button"> Discover our Process</a>
         </div>
     </section>
 
+    <!-- Section 3 - Let's Work Together -->
+    <section class="grid padded banner-contact">
+        <div class="col-1"></div>
+        <div class="col-10 padded light-bg txtcenter">
+            <h1>Ready to start <i>your</i> journey towards your dream website?</h1>
+            <a href="" class="button">Enquire Now</a>
+        </div>
+        <div class="col-1"></div>
+    </section>
+
 
     <!-- Section 3 - The Portfolio -->
-    <section class="grid light-bg padded mob-padded-0 txtcenter border">
+    <section class="grid dark-bg padded whitetxt txtcenter mob-padded-0">
         <div class="col-12">
-            <h1> Featured Work </h1> 
+            <h2 class="whitetxt"> Featured Work </h2> 
         </div>
         <!-- gallery -->
         <div class="col-4">
@@ -110,25 +131,3 @@ title: Verdi Studio
     {% include enquire.html %}  
 
     
-
-    <!-- Section 5 - Let's Connect -->
-    <section class="grid light-bg">
-        <div class="col-2 border-right">
-            <img src="images/VSInsta-1.jpg" alt="">
-        </div>
-        <div class="col-2 border-right">
-            <img src="images/VSInsta-2.jpg" alt="">
-        </div>
-        <div class="col-2 border-right">
-            <img src="images/VSInsta-3.jpg" alt="">
-        </div>
-        <div class="col-2 border-right">
-            <img src="images/VSInsta-6.jpg" alt="">
-        </div>
-        <div class="col-2 border-right">
-            <img src="images/VSInsta-5.jpg" alt="">
-        </div>
-        <div class="col-2">
-            <img src="images/VSInsta-4.jpg" alt="">
-        </div>
-    </section>

@@ -30,20 +30,20 @@
   
   .padded     { padding: 5%; }
   .padded-2   { padding: 2%; }
-  .padded-15  { padding: 10%; }
+  .padded-13  { padding: 13%; }
   .padded-40  { padding: 40%; }
   .padded-05  { padding: 0.5rem }
 
   .relative {position: relative;}
  
   /* bg-colours  */
-  .featured-bg { background-color: #CCD4AE; }
+  .featured-bg { background-color: #A9B2A1; }
   .light-bg    { background-color: #F8F5F1; }
-  .dark-bg     { background-color: #5F6B36; }
+  .dark-bg     { background-color: #52593C; }
+  .grey-bg     { background-color: #484848; }
 
   /* borders */
-  .border          { border-bottom: 1px solid #484848; }
-  .border-around   { border: 1px solid #484848; }
+  .border   { border: 1px solid #484848; }
   .border-right    { border-right: 1px solid #484848; }
 
   /* bump */
@@ -56,28 +56,35 @@
   
   /* --------------- Typography ------------ */
   h1 {
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 1.9rem;
-    line-height: 1;
+    font-family: 'Italiana', serif;
+    font-size: 3rem;
+    line-height: 1.5;
     margin-bottom: 1.5rem;
-    color: #5F6B36;
+    color: #484848;
   }
   
   h2 {
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 1.8rem;
-    text-transform: uppercase;
+    font-family: 'Italiana', serif;
+    font-size: 2.8rem;
     line-height: 1;
     margin-bottom: 1rem;
+    color: #484848;
   }
 
   h3 {
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 3.5rem;
-    text-transform: uppercase;
+    font-family: 'Italiana', serif;
+    font-size: 1.5;
     line-height: 1;
     margin-bottom: 1rem;
-    color: #5F6B36
+    color: #52593C;
+  }
+
+  h4 {
+    font-family: 'Italiana', serif;
+    font-size: 3.5rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+    color: #52593C
   }
    
   p {
@@ -156,7 +163,7 @@
   
   /*--------------- Header and Footer ------------ */
   header {
-    padding: 1.5% 5%;
+    padding: 2% 5%;
     background: 0 0;
   }
   
@@ -184,17 +191,22 @@
   
   footer nav a {
     font-family: 'Lato', sans-serif;
-    margin: 0.8rem;
-    font-size: 1rem;
+    margin: 0.4rem;
+    font-size: 0.8rem;
     display: inline-block;
     text-decoration: none;
-    text-transform: uppercase;
     color: inherit;
     transition: 0.5s;
   }
   
   footer nav a:hover {
     color: #D09752;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 
 
@@ -302,9 +314,9 @@
   }
 
   .fa-solid, .fa-brands {        
-    font-size: 1rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
-    margin-right: 0.5rem;
+    margin-right: 1.5rem;
     color: #484848;
   }
 
@@ -312,14 +324,14 @@
   
   /* -------------- Banners --------------- */
   .banner-front-page {
-    background-image: url(images/front-page-banner.png);
+    background-image: url(images/front-page-banner.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 
   .banner-contact {
-    background-image: url(images/banner-contact-me.png);
+    background-image: url(images/banner-contact-me.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -347,6 +359,13 @@
   }
 
   /* ---------- Background Images ------------ */
+  .background-contact {
+    background-image: url(images/rome-statue.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+  }
+  
   .background-aroux {
     background-image: url(images/aroux-background.jpg);
     background-size: cover;

@@ -2,65 +2,49 @@
 layout: default
 title: Portfolio - Verdi Studio
 ---
-<title>VS - Portfolio</title>
+<title>About The Studio - VS </title>
 <!------ This is where our main content starts  ------->
- <!-- Header -->
-    <section class="banner-front-page border">
-        <header class="grid">
-            <div class="col-4">
-               <a href="index.html"><img src="images/vslogo-darker.png" alt=""></a>
-            </div>
-            <nav class="col-8 mob-hide txtright">
-                <a href="about.html"> About Us </a>
-                <a href="process.html"> The Process </a>
-                <a href="portfolio.html"> Our Work </a>
-                <a href=""> Contact Us </a>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-pinterest"></i>
-            </nav>
-            <div class="col-8 right">
-                <a class="hamburger-button mob-show"> 
-                    <div class="container"onclick="myFunction(this)">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div> 
-                </a>
-            </div>
-        </header>
-    
-        <div class="mobile-menu"> 
-            <nav> 
-                <a href="about.html"> About </a>
-                <a href="process.html"> Our Process </a>
-                <a href="portfolio.html"> Our Work </a>
-                <a href=""> Contact Us </a>
-            </nav>
-        </div>
+    <!-- Header -->
+    {% include header.html %}  
 
-        <section class="grid txtcenter">
-            <div class="col-12 padded-15">
-                <h1>Our Work</h1>
-            </div>
-        </section>
+
+    <!-- Banner -->
+    <section class="grid padded-8 banner-page">
+        <div class="col-1"></div>
+        <div class="col-10 padded txtcenter" data-aos="fade-in">
+            <h1>Our Portfolio</h1>
+        </div>
+        <div class="col-1"></div>
     </section>
 
-    <!-- Grid -->
-    <section class="grid light-bg padded mob-padded-0 txtcenter border">
-        <!-- gallery -->
-        <div class="col-3">
-            <a href="aroux.html"><img class="grayscale" src="images/mock-aroux.png" alt=""></a>
+    <!-- Section 1 - Portfolio -->
+    <section class="grid background-deco padded">
+        <div class="col-2"></div>
+        <div class="col-4 padded-2" data-aos="fade-in">
+            <a href="aroux.html"><img class="grayscale" src="images/mock-aroux.jpg" alt=""></a>
         </div>
-        <div class="col-3">
-            <a href="asana.html"><img class="grayscale" src="images/mock-asanas.png"  alt=""></a>
+        <div class="col-4 padded-2" data-aos="fade-in">
+            <a href="asana.html"><img class="grayscale" src="images/mock-asanas.jpg"  alt=""></a>
         </div>
-        <div class="col-3">
-            <a href="moongazy.html"><img class="grayscale" src="images/mock-moongazy.png" alt=""></a>
+        <div class="col-2"></div>
+
+        <div class="col-2"></div>
+        <div class="col-4 padded-2" data-aos="fade-in">
+            <a href="aapackaging.html"><img class="grayscale" src="images/mock-aap.jpg" alt=""></a>
         </div>
-        <div class="col-3">
-            <a href="aapackaging.html"><img class="grayscale" src="images/mock-aap.png" alt=""></a>
+        <div class="col-4 padded-2" data-aos="fade-in">
+            <a href="moongazy.html"><img class="grayscale" src="images/mock-moongazy.jpg" alt=""></a>
         </div>
-    </section>  
+        <div class="col-2"></div>
+    </section>
+
 
     <!-- Enquire  -->
-    {% include enquire.html %}  
+    <section class="grid padded banner-carvings">
+        <div class="col-1"></div>
+        <div class="col-10 padded light-bg txtcenter" data-aos="fade-in">
+            <h1>Ready to start <i>your</i> journey towards your dream website?</h1>
+            <a href="" class="button">Enquire Now</a>
+        </div>
+        <div class="col-1"></div>
+    </section>

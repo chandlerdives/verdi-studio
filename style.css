@@ -30,6 +30,7 @@
   
   .padded     { padding: 5%; }
   .padded-2   { padding: 2%; }
+  .padded-8   { padding: 8%; }
   .padded-13  { padding: 13%; }
   .padded-40  { padding: 40%; }
   .padded-05  { padding: 0.5rem }
@@ -47,8 +48,8 @@
   .border-light    { border: 1px solid #F8F5F1; }
 
   /* bump */
-  .bump-right { margin-right: -11rem; }
-  .bump-left  { margin-left: -11rem; }
+  .bump-right { margin-left: 6rem; }
+  .bump-left  { margin-left: -6rem; }
 
   .whitetxt { color: white; }
 
@@ -163,7 +164,7 @@
   
   /*--------------- Header and Footer ------------ */
   header {
-    padding: 2% 5%;
+    padding: 1% 1%;
     background: 0 0;
   }
   
@@ -324,21 +325,28 @@
   
   /* -------------- Banners --------------- */
   .banner-front-page {
-    background-image: url(images/front-page-banner.jpg);
+    background-image: url(images/front-page-banner.png);
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
   }
 
-  .banner-contact {
+  .banner-page {
+    background-image: url(images/page-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+  }
+
+  .banner-work-together {
     background-image: url(images/banner-contact-me.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
   }
 
-  .banner-about {
-    background-image: url(images/about-banner.jpg);
+  .banner-carvings {
+    background-image: url(images/banner-carvings.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -359,6 +367,20 @@
   }
 
   /* ---------- Background Images ------------ */
+  .background-textured {
+    background-image: url(images/textured-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+  }
+
+  .background-deco {
+    background-image: url(images/decorative-background.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+  }
+
   .background-contact {
     background-image: url(images/rome-statue.jpg);
     background-size: cover;
@@ -408,13 +430,6 @@
     background-attachment: fixed;
   }
 
-  .background-hand {
-    background-image: url(images/hand-on-paper.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-  }
-
   .pillar-1 {
     background-image: url(images/pillar1.png);
     background-size: cover;
@@ -454,7 +469,6 @@
     filter: grayscale(0);
   }
   
-  .instagram-grid-container 
 
   
 
@@ -501,16 +515,56 @@
 
   /* ------------ Form ----------- */
   
-  input, textarea {
-    font-family: 'Lato', sans-serif; 
-    border-style: solid;
-    border: 0.5px solid #484848;
-    padding: 0.8em;
+  form input, 
+  form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #484848;
+  outline: none;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-size: 1rem;
+  }
+
+  form input:focus,
+  form textarea:focus {
+    border-color: teal;
+  }
+
+  textarea {
+    min-height: 4rem;
+  }
+
+  form label {
+    margin-top: 1rem;
     display: block;
-    width: 100%;
+    font-family: 'Lato', sans-serif;
     font-size: 1rem;
-    vertical-align: top;
-}
+    color: #484848;
+  }
+
+  form button {
+    background-color:#52593C;
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    letter-spacing: 0.1em;
+    margin: 0.5rem 0;
+    transition: 0.3s;
+  }
+
+  form button:hover {
+    background-color:#D09752;
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    letter-spacing: 0.1em;
+    margin: 0.5rem 0;
+    transition: 0.3s;
+  }
+
+
   
 
   /* ----------- Typed Animation -------- */

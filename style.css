@@ -331,6 +331,13 @@
     background-attachment: scroll;
   }
 
+  .banner-header {
+    background-image: url(images/header-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+  }
+
   .banner-page {
     background-image: url(images/page-banner.jpg);
     background-size: cover;

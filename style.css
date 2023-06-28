@@ -489,14 +489,16 @@
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
     padding: 1rem;
-    margin: 0.25rem 0;
+    margin: 1rem 0;
     display:block;
     color: #5F6B36;
+    border-bottom: solid 1px #5F6B36;
     position: relative;
     text-decoration: none;
   }
   .accordion dd {
-    padding: 0.5rem;
+    padding: 2rem;
+    border-bottom: solid 1px #5F6B36;
     font-family: 'Lato', sans-serif;
   }
   

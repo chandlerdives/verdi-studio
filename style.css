@@ -262,7 +262,7 @@
   /* this is the nav menu for mobile */
   .mobile-menu {
       display: none; 
-      background-color: #CCD4AE; 
+      background-color: #A9B2A1;; 
       padding: 2%;
       position: fixed; 
       top: 0;
@@ -291,7 +291,7 @@
   }
 
   .mobile-menu a:hover {
-    color: #BC4749;
+    color: #D09752;
   }
 
 

@@ -24,7 +24,7 @@ AOS.init({
 
 // Typed.js Code
 var typed = new Typed('#typed', {
-	stringsElement: '#typed-strings',
+  stringsElement: '#typed-strings',
   	typeSpeed: 30,
   	startDelay: 500,
   	backSpeed: 10,
@@ -32,7 +32,7 @@ var typed = new Typed('#typed', {
   	smartBackspace: true,
   	loop: true,
   	loopCount: Infinity
-});
+  });
 
 
 $('.slider-container').slick({

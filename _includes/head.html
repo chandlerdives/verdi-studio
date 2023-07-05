@@ -18,6 +18,16 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <!--------------------- SEO Metadata ----------------------->
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-29GZZYPPE2"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-29GZZYPPE2');
+        </script>
+
         <title> {{ page.seo.title | default: site.data.site-settings.seo.title }} </title> 
         <meta name="description" content="{{ page.seo.description | default: site.data.site-settings.seo.description }}">
         <meta name="keywords" content="{{ page.seo.keywords | default: site.data.site-settings.seo.keywords }}">

@@ -33,6 +33,45 @@ function myFunction(x) {
   x.classList.toggle("change");
 }
 
+// Cookie Banner
+document.addEventListener("DOMContentLoaded", () => {
+  let cookiePopup = document.getElementById("cookiePopup");
+  let cookieAccept = document.getElementById("cookieAccept");
+
+  cookieAccept.addEventListener("click", function() {
+      cookiePopup.style.display = "none";
+      setCookie("cookieConsent", "true", 365);
+  });
+
+  if (!getCookie("cookieConsent")) {
+      cookiePopup.style.display = "block";
+  }
+});
+
+const setCookie = (name, value, days) => {
+  let expires = "";
+  if (days) {
+      let date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
+  }
+  document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+
+const getCookie = (name) => {
+  let nameEQ = name + "=";
+  let cookies = document.cookie.split(';');
+  for (let i = 0; i < cookies.length; i++) {
+      let cookie = cookies[i];
+      while (cookie.charAt(0) === ' ') {
+          cookie = cookie.substring(1, cookie.length);
+      }
+      if (cookie.indexOf(nameEQ) === 0) {
+          return cookie.substring(nameEQ.length, cookie.length);
+      }
+  }
+  return null;
+}
 
 // Typed.js Code
 var typed = new Typed('#typed', {
@@ -45,3 +84,8 @@ var typed = new Typed('#typed', {
   	loop: true,
   	loopCount: Infinity
   });
+
+
+
+
+

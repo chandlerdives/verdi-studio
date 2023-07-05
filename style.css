@@ -568,13 +568,14 @@
     left: 0;
     width: 100%;
     background-color: #52593C;
-    padding: 2%;
-    text-align: center;
+    padding: 0.4%;
+    padding-left: 2%;
+    text-align: left;
     z-index: 9999;
   }
 
   .cookie-popup-content {
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: center;
   }
@@ -587,13 +588,11 @@
   .cookie-popup-button {
     border: solid 1px white;
     color: white;
-    padding: 0.5% 1%;
-    margin-top: 0.5%;
+    padding: 0.2rem 0.5rem;
     margin-left: 1%;
-    text-align: center;
     text-decoration: none;
+    text-align: center;
     display: inline-block;
-    font-size: 14px;
     cursor: pointer;
     transition: 0.3s;
   }

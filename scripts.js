@@ -1,3 +1,4 @@
+// Accordion
 var allPanels = $('.accordion > dd').hide();
 
 	$('.accordion > dt').click(function() {
@@ -22,6 +23,17 @@ AOS.init({
 });
 
 
+// hamburger button
+$('.hamburger-button').click(function(){
+  $('.mobile-menu').slideToggle(100);
+  $(this).toggleClass('active');
+});
+
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+
+
 // Typed.js Code
 var typed = new Typed('#typed', {
   stringsElement: '#typed-strings',
@@ -33,46 +45,3 @@ var typed = new Typed('#typed', {
   	loop: true,
   	loopCount: Infinity
   });
-
-
-$('.slider-container').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  dots: true,
-  adaptiveHeight: true,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
-
-
-// hamburger button
-  $('.hamburger-button').click(function(){
-    $('.mobile-menu').slideToggle(100);
-    $(this).toggleClass('active');
-  });
-  
-  function myFunction(x) {
-    x.classList.toggle("change");
-  }
-
-
-

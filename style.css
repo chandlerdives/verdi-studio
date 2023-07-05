@@ -164,7 +164,7 @@
   
   /*--------------- Header and Footer ------------ */
   header {
-    padding: 1% 1%;
+    padding: 0% 1%;
     background: 0 0;
   }
   
@@ -263,7 +263,7 @@
   .mobile-menu {
       display: none; 
       background-color: #A9B2A1;; 
-      padding: 2%;
+      padding: 5%;
       position: fixed; 
       top: 0;
       bottom: 0;
@@ -274,11 +274,11 @@
   }
   
   .mobile-menu nav a {
-      font-family: 'Lato', sans-serif;  
+      font-family: 'Lato', sans-serif; 
+      display: block; 
       text-decoration: none; 
       color: inherit; 
       padding: 1rem 1.2rem;
-      display: block;
       font-weight: normal;
       font-size: 0.9rem;
   }
@@ -301,7 +301,7 @@
       display: none; 
   }
   
-  @media(max-width:1071px) {
+  @media(max-width:48em) {
       .mob-hide { display: none; }
       .mob-show { display: block; }
   }

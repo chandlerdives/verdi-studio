@@ -1,4 +1,4 @@
-// Accordion
+// ------ Accordion
 var allPanels = $('.accordion > dd').hide();
 
 	$('.accordion > dt').click(function() {
@@ -13,7 +13,7 @@ var allPanels = $('.accordion > dd').hide();
 	});
 
 
-// Animate on scroll
+// ------ Animate on scroll
 AOS.init({
   offset: 250, // offset (in px) from the original trigger point
   delay: 100, // values from 0 to 3000, with step 50ms
@@ -23,7 +23,7 @@ AOS.init({
 });
 
 
-// hamburger button
+// ------ Hamburger Button
 $('.hamburger-button').click(function(){
   $('.mobile-menu').slideToggle(100);
   $(this).toggleClass('active');
@@ -33,14 +33,15 @@ function myFunction(x) {
   x.classList.toggle("change");
 }
 
-// Cookie Banner
+
+// ------ Cookie Banner
 document.addEventListener("DOMContentLoaded", () => {
   let cookiePopup = document.getElementById("cookiePopup");
   let cookieAccept = document.getElementById("cookieAccept");
 
   cookieAccept.addEventListener("click", function() {
       cookiePopup.style.display = "none";
-      setCookie("cookieConsent", "true", 365);
+      setCookie("cookieConsent", "true", 31);
   });
 
   if (!getCookie("cookieConsent")) {
@@ -52,10 +53,10 @@ const setCookie = (name, value, days) => {
   let expires = "";
   if (days) {
       let date = new Date();
-      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      date.setTime(date.getTime() + (days*24*60*60*1000));
       expires = "; expires=" + date.toUTCString();
   }
-  document.cookie = name + "=" + (value || "") + expires + "; path=/";
+  document.cookie = name + "=" + value + expires + "; path=/";
 }
 
 const getCookie = (name) => {
@@ -73,7 +74,8 @@ const getCookie = (name) => {
   return null;
 }
 
-// Typed.js Code
+
+// ------ Typed.js Code
 var typed = new Typed('#typed', {
   stringsElement: '#typed-strings',
   	typeSpeed: 30,

@@ -58,7 +58,7 @@
   /* --------------- Typography ------------ */
   h1 {
     font-family: 'Italiana', serif;
-    font-size: 3rem;
+    font-size: 3em;
     line-height: 1.5;
     margin-bottom: 1.5rem;
     color: #484848;
@@ -302,6 +302,9 @@
   @media(max-width:48em) {
       .mob-hide { display: none; }
       .mob-show { display: block; }
+
+      h1 { font-size: 2rem; }
+      .img-mob { display: inline; margin-bottom: 1rem; }
   }
   
   

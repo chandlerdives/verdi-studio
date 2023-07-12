@@ -366,6 +366,15 @@
     background-attachment: fixed;
   }
 
+  @media (max-device-width: 600px) {
+    .banner-front-page      { background-attachment: scroll; }
+    .banner-header          { background-attachment: scroll; }
+    .banner-work-together   { background-attachment: scroll; }
+    .banner-carvings        { background-attachment: scroll; }
+    .banner-arches          { background-attachment: scroll; }
+    .banner-match           { background-attachment: scroll; }
+  }
+
 
   /* ---------- Background Images ------------ */
   .background-textured {

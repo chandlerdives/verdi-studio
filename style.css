@@ -394,8 +394,9 @@
   .background-contact {
     background-image: url(images/rome-statue.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-attachment: scroll;
+    min-height: 35em;
   }
 
   .background-about {
@@ -403,6 +404,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
+    min-height: 35em;
   }
 
   .background-cpd {
@@ -452,6 +454,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
+    min-height: 20em;
   }
 
   

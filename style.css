@@ -448,6 +448,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
+    min-height: 40em;
   }
 
   .background-florence {

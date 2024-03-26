@@ -4,138 +4,180 @@ title: The Process
 ---
 <title>{{page.title}}</title>
     <!------ This is where our main content starts  ------->
-    {% include header.html %}  
+    <section class="banner-in-motion">
+        <header class="grid-middle">
+            <div class="col-8">
+                <a class="button" href="">work with us</a>
+            </div>
+            <div class="col-4-left">
+                <a class="hamburger-button"> 
+                    <div class="container"onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <!-- <div class="bar2"></div> -->
+                        <div class="bar3"></div>
+                    </div> 
+                </a>
+            </div>
+        </header>
+
+        <div class="mobile-menu"> 
+            <nav> 
+                <br>
+                <br>
+                <a href="/about"> About </a>
+                <a href="/process"> Our Process </a>
+                <a href="/portfolio"> Our Work </a>
+                <a href="/contact"> Contact Us </a>
+                <br>
+                <a href="/index"> ~ Back to home ~ </a>
+            </nav>
+        </div>
+
+        <section class="grid padded-8">
+            <div class="col-7_md-12" data-aos="fade-in">
+                <h1 class="txtleft padded hide-sm">Your brand deserves a standing ovation.</h1>
+                <h1 class="txtcenter padded show-sm">Your brand deserves a standing ovation.</h1>
+            </div>
+            <div class="col-5"></div>
+            <div class="col-5"></div>
+            <div class="col-7_md-12" data-aos="fade-in">
+                <h1 class="txtleft padded hide-sm">Craft a website that steals the show.</h1>
+                <h1 class="txtcenter padded show-sm">Craft a website that steals the show.</h1>
+            </div>
+        </section>
+    </section>  
     
 
-    <!-- Section 1 - Introduction -->
-    <section class="grid padded light-bg">
-        <div class="col-2_md-1-middle">
-            <img src="images/process-image1.png" alt="close up of woman's hand writing on blank paper" class="bump-left mob-hide" data-aos="fade-in">
-        </div>
-        <div class="col-8_md-10 padded txtcenter" data-aos="fade-in">  
-            <p>Our clients deserve our <i>full, undivided attention</i>; which is why Verdi Studio focuses on just one project at a time, to deliver a bespoke, custom-coded website in just a matter of weeks.</p>
-            <p>We know first hand that your own business is an extension of your heart, soul and passion. That's why we see this as a collaborative experience and include our clients in our work every single step of the way.</p>
-            <br>
-            <br>
-            <h2>It all starts with a story...</h2>
-            <p>If you're curious about working with us, all we ask for is a <a href="/contact">simple email enquiry</a> from you, telling us about your business and what kind of website you're looking for. You can even send us design inspiration, if you'd like! Based on this Verdi Studio will send you an initial quote, and if we choose to go forward from here: the real fun begins!</p>
-            <a class="button" href="/contact">Enquire for a free quote</a>
-        </div>
-        <div class="col-2_md-1-middle">
-            <img src="images/process-image2.png" alt="Woman leaning against wall holding closed laptop" class="bump-right mob-hide" data-aos="fade-in">
-        </div>
-        <!-- mob show -->
-        <div class="col-2 mob-show"></div>
-        <div class="col-8 mob-show">
-            <img src="images/process-image1.png" alt="close up of woman's hand writing on blank paper" data-aos="fade-in">
-        </div>
-        <div class="col-2 mob-show"></div>
-    </section>
-
-    <!-- Section 2 - Three stages  -->
-    <section class="grid featured-bg padded txtcenter">
-        <div class="col-2_md-1"></div>
-        <div class="col-8_md-10-middle" data-aos="fade-in">
-            <h2>Three steps to create some <i>magic</i></h2>
-            <p>Once we've agreed to work together, our clients use our Google Calendar to book their build slot. We work together beforehand on prep work, such as collaborating on moodboards and design inspirations, but it's during this time slot that the magic happens.</p>
-        </div>
-        <div class="col-2_md-1"></div>
-        <!-- border boxes -->
-        <div class="col-4_sm-12 padded" data-aos="fade-in">
-            <div class="border padded">
-                <h3>Step I.</h3>
-                <p>Verdi Studio creates the final designs and lock in wireframes for all pages of your site. Some pre-build code will be happening behind the scenes whilst you look over and approve the wireframes.</p>
-            </div>
-        </div>
-        <div class="col-4_sm-12 padded" data-aos="fade-in">
-            <div class="border padded">
-                <h3>Step II.</h3>
-                <p>A busy week for Verdi Studio, as we turn the approved designs into a fully working website! You'll recieve sneak peeks along the way, with a big reveal towards the end! Then it's time to get ready for editing.</p>
-            </div>
-        </div>
-        <div class="col-4_sm-12 padded" data-aos="fade-in">
-            <div class="border padded">
-                <h3>Step III.</h3>
-                <p>We like to refer to this as “finishing touches” week. After you've looked over your website, we'll implement edits along the way before handing over the keys at the end of the week. Now we celebrate!</p>
-            </div>
-        </div>
-        <div class="col-12">
-            <a href="/contact" class="button"> Sounds great! Sign me up!</a>
-        </div>
-    </section>
-
-    <!-- Section 3 - FAQ -->
-    <div class="col-12 light-bg"><img src="images/page-border.png" alt="roman mosaic border"></div>
-    <section class="padded light-bg">
-        <div class="border padded-2" data-aos="fade-in">
-            <div class="grid padded-2">
-                <div class="col-12 txtcenter">
-                    <h2>Questions?</h2>
-                    <p>Don't worry, we've got your back.</p>
-                </div>
-            </div>
-            
-             <dl class="accordion">
-                <dt>How much do you quote for a website?</dt>
-                <dd>
-                    <p>Every project is unique so we like to keep our prices as flexible as we can in order to meet our client's individual needs. To keep things simple, we classify projects as small, medium and large. Small being a simple, one page website and large being a 5-6+ page site with a blog or shop. Our prices can range anywhere from £700 - £2,200+. For a more bespoke quote, please get in touch by emailing a little bit about what you're looking for and we'll tailor it to your needs.</p> 
-                </dd>
-    
-                <dt>What's included in a package?</dt>
-                <dd>
-                    <p>Each and every website we create is fully custom-coded to our client's specific needs, but all of our packages include: 
-                        <li>~ Client Welcome Pack with results of questionnaire and contract</li>
-                        <li>~ Page wireframe designs and moodboards ahead of the website build.</li>
-                        <li>~ Website designed with UI/UX principles (eg. mobile friendy) and with accessibility in mind (eg. colour contrasting checks)</li>
-                        <li>~ A tutorial on how you can make simple changes and edits to your site using the Content Management System</li>
-                        <li>~ Ongoing support from Verdi Studio</li>
-                    </p> 
-                </dd>
-    
-                <dt>Who is responsible for the website after it's built?</dt>
-                <dd>
-                    <p>Verdi Studio uses a beginning-friendly content management system to make it as easy as possible for clients to edit copy or to add and change out photos on their own websites and/or blogs. We always hand over our websites with a tutorial on how to use the CMS. However, some clients prefer to provide us with the content and for us to fill it all in during the build; and then get in touch for small changes afterwards. We are happy to do these changes for a small fee.</p>
-                    <p>Verdi Studio will always keep 2 copies of your website in our own files ~ so in addition to the one in the cloud, we'll also have it on our own hard drives as a back up.</p>
-                </dd>
-    
-                <dt>How much input do I have in the process?</dt>
-                <dd>
-                    <p>We see this process as a fully collobarative experience every step of the way. From the beginning, our client questionnaire is designed for us to learn all about your business and new website goals.</p> 
-                </dd>        
-            </dl>
-    
-            <div class="grid padded-2">
-                <div class="col-12 txtcenter">
-                    <p>Still have a few more? Take a look at our <a href="/faq">FAQ</a> and see if we've covered your query.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Section 4 - Get in touch -->
-    <section class="grid background-textured">
-        <div class="col-3_sm-12 background-florence"></div>
-        <div class="col-9_sm-12-middle padded"> 
-            <div class="padded txtcenter light-bg" data-aos="fade-in">
-                <h2>Verdi Studio creates long-lasting designs that make an <i>impact</i>.</h2>
-                <p>When it comes to design, we are inspired by those around us; whether it be people, architecture or the natural world. We lean towards <i>timeless and understated designs,</i> but have been known to dabble in the unexpected too.</p>
-                <p>We recognise that these websites have one main purpose: which is to showcase <i>your</i> business and to tell <i>your</i> stories... Therefore, as long as we create something that truly reflects who you are, we'll feel like we've done our job!</p>
-                <a href="/contact" class="button">let's get started</a>
-            </div> 
-        </div>
-    </section>
-
-
-    <!-- Section 5 - Giving Back -->
+    <!-- Section 1 - Three Packages  -->
     <section class="grid light-bg padded txtcenter">
+        <!-- Package 1 -->
+        <div class="grid padded txtleft">
+            <nav class="col-12 txtright border-bottom hide-md" data-aos="fade-in"></nav>
+            <div class="col-7_md-12-middle padded" data-aos="fade-in">
+                <h2>The Everlasting Muse: fully custom design</h2>
+                <p>Embark on a tailored digital experience through our flagship service. In this collaborative adventure, we unite with you to craft a completely personalised website from scratch. Every pixel, every line of code, and every detail is meticulously curated to bring your unique vision to liferors your brand's identity with exclusivity.</p>
+                <a class="button" href="/everlastingmuse">Learn more about Muse</a>    
+            </div>
+            <div class="col-1"></div>
+            <div class="col-4_md-12" data-aos="fade-in">
+                <img class="border-three-sides" src="images/everlasting-muse-laptop.jpg" alt="">
+            </div>
+        </div>
+        <!-- Package 2 -->
+        <div class="grid padded txtleft">
+            <nav class="col-12 txtright border-bottom hide-md" data-aos="fade-in"></nav>
+            <div class="col-4 hide-md" data-aos="fade-in">
+                <img class="border-three-sides" src="images/tailored-canvas-ipad.jpg" alt="">
+            </div>
+            <div class="col-1"></div>
+            <div class="col-7_md-12-middle padded" data-aos="fade-in">
+                <h2>The Tailored Canvas: a template transformation</h2>
+                <p>For those who seek sophistication with a touch of swiftness, our Tailored Canvas tweaks offers the perfect blend. Choose from our curated design templates which will we then tailor it to your specifications, ensuring a quicker turnaround and a slightly lighter investment. The best part? Once sold, your design becomes a digital heirloom, exclusive to your brand.</p>
+                <a class="button" href="">Learn more about Tailored</a> 
+            </div>
+        </div>
+        <!-- Package 3 -->
+        <div class="grid padded txtleft">
+            <nav class="col-12 txtright border-bottom" data-aos="fade-in"></nav>
+            <div class="col-7-middle padded" data-aos="fade-in">
+                <h2>The Mini Masterpiece: the two-page wonder</h2>
+                <p>In a world where simplicity speaks volumes, Mini emerges as the solution for those on the fast track to digital success. This streamlined package features a captivating homepage and a strategically crafted sales page - a concise yet powerful combination designed to deliver results swiftly. It's the perfect launchpad for your brand, providing an easy-to-use, cost-effective solution that doesn't compromise on impact.</p>
+                <a class="button" href="">Learn more about Mini</a>  
+            </div>
+            <div class="col-1"></div>
+            <div class="col-4" data-aos="fade-in">
+                <img class="border-three-sides" src="images/mini-masterpiece-phone.jpg" alt="">
+            </div>
+        </div>
+        <!-- CTA -->
+        <div class="col-2"></div>
+        <div class="col-8 padded-2" data-aos="fade-in">
+            <p>We understand the deep connection you have with your business - it reflects your heart, soul, and passion. This is why The Verdi Collective prioritises working on one project at a time to provide a unique, tailor-made website within a short time frame.</p>
+            <a class="button" href="">Ready to see your dream website come to life?</a>
+        </div>
+        <div class="col-2"></div>
+    </section>
+    <div class="col-12 light-bg"><img src="images/page-border.png" alt="roman mosaic border"></div>
+
+    <!-- Section 2 - CTA Banner -->
+    <section class="padded banner-match">
+        <div class="grid padded white-bg txtleft" data-aos="fade-in">
+            <div class="col-4 background-chandler-guildhall"></div>
+            <div class="col-1"></div>
+            <div class="col-6-middle padded-2">
+                <h2>Your online presence? It's not <i>just</i> a website. It's a story that deserves a <i>stage</i>.</h2>
+                <p>The Verdi Collective crafts websites that aren't just pretty faces... We transform your brand narrative into captivating showstoppers that wow your audience. Because a website that truly reflects your essence deserves a curtain call.</p>
+                <a href="/contact" class="button">Lets craft yours</a>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </section>
+
+    <!-- Section 3 - The Process -->
+    <section class="grid padded featured-bg">
+        <div class="col-2"></div>
+        <div class="col-8 padded-2 txtcenter" data-aos="fade-in">
+            <h2>Let's go from vision to reality...</h2>
+            <p>Wondering how it works? We begin each project with a deep dive into your goals and preferences. This allows us to tailor a custom quote that perfectly aligns with your needs. Before finalising anything, we ensure a perfect fit by confirming our studio's capabilities match your project's requirements.</p>
+        </div>
+        <div class="col-2"></div>
+        <!-- 2 Squares -->
+        <div class="col-2"></div>
+        <div class="col-4 padded-2" data-aos="fade-in">
+            <div class="border padded">
+                <h3>I. Discovery</h3>
+                <p>Your website journey starts with a conversation! After receiving your initial inquiry and understanding your preferred package, we'll schedule a video call to get to know each other better. This Discovery Call is your chance to share your vision, ask questions, and gain valuable insights into our design process. We'll work collaboratively to ensure your website aligns perfectly with your goals and brand identity.</p>
+            </div>
+        </div>
+        <div class="col-4 padded-2" data-aos="fade-in">
+            <div class="border padded">
+                <h3>II. Proposal</h3>
+                <p>Once we have a clear understanding of your project needs and chosen package, we'll craft a personalised design proposal outlining the project scope, timeline and a detailed cost breakdown to help you to make an informed decision. Upon your approval, we'll provide an onboarding booklet which details communication channels, milestones, and next steps, keeping you informed and involved every step of the way.</p>
+            </div>
+        </div>
+        <div class="col-2"></div>
+        <!-- 2 Squares -->
+        <div class="col-2"></div>
+        <div class="col-4 padded-2" data-aos="fade-in">
+            <div class="border padded">
+                <h3>III. Development</h3>
+                <p>This is where your website takes shape! We'll work collaboratively throughout the development phase, which may involve design iterations, content gathering, and technical implementation specific to your chosen package. We'll keep you updated on progress to ensure the final product exceeds your expectations. Open communication is essential for crafting a website that truly reflects your unique brand and goals.</p>
+            </div>
+        </div>
+        <div class="col-4 padded-2" data-aos="fade-in">
+            <div class="border padded">
+                <h3>IIII. Delivery</h3>
+                <p>The moment you've been waiting for! Once the website is meticulously tested and polished to perfection, we'll present it to you for final approval. Upon your green light, we'll launch your website, making it accessible to the world! Our commitment doesn't end there. We'll provide any necessary post-launch support to ensure a smooth transition and help you navigate the exciting world of online presence.</p>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </section>
+    
+    <!-- Section 4 - CTA Banner -->
+    <section class="padded banner-spotlight">
+        <div class="grid padded white-bg txtleft" data-aos="fade-in">
+            <div class="col-2"></div>
+            <div class="col-4-middle padded-2"><h2>Cue the Spotlight!</h2></div>
+            <div class="col-4-middle padded-2">
+                <li class="border-bottom"><h3><a href="">Read our FAQ</a></h3></li>
+                <br>
+                <li class="border-bottom"><h3><a href="">Send us an enquiry</a></h3></li>
+                <br>
+                <li class="border-bottom"><h3><a href="">Request a (free) audit</a></h3></li>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </section>
+
+    <!-- Section 6 - Giving Back -->
+    <!-- <section class="grid light-bg padded txtcenter">
         <div class="col-2_md-1"></div>
         <div class="col-8_md-10-middle" data-aos="fade-in" id="giving-back">
             <h2><i>Giving</i> back</h2>
             <p>With every project we book we donate a percentage to give back, as part of a personal pledge to support those in need. This year we are giving our support to two charities:</p>
         </div>
         <div class="col-2_md-1"></div>
-        <!-- border boxes -->
+        
         <div class="col-2_md-12"></div>
         <div class="col-4_md-6_sm-12 padded-2" data-aos="fade-in">
             <div class="border padded">
@@ -152,7 +194,7 @@ title: The Process
             </div>
         </div>
         <div class="col-2_md-12"></div>
-    </section>
+    </section> -->
 
     
     

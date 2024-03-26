@@ -4,26 +4,92 @@ title: About Us
 ---
 <title>{{page.title}}</title>
 <!------ This is where our main content starts  ------->
-    {% include header.html %}  
-
-    
-    <!-- Section 1 - About VS -->
-    <section class="grid padded light-bg">
-        <div class="col-5_md-12 background-about" data-aos="fade-in"></div>
-        <div class="col-7_md-12-middle padded" data-aos="fade-in">
-            <h1>About Verdi Studio</h1>
-            <p> We are a female-led creative studio, specialising in <i>front-end website design and development</i>. Verdi Studio partners with independent business owners across the globe to bring their brand and stories to life online, by crafting beautifully designed and well thought out websites with their unique customers/clients in mind.</p>
-            <p>We consider ourselves <i>dreamers, storytellers and adventurers</i> and we absolutely love working with people who embody the same values as we do. Supporting indie businesses is what we do best, and we know first-hand that your business is so incredibly personal to you. That's why we'll work closely together to ensure your website fully encaptures your values and reaches your goals.</p>
-            <p>To put it simply: <i>Verdi Studio will take care of the design so that you can continue to take care of your business</i>. </p>
-            <a class="button" href="/process">Find out more about our Process</a>
+    <section class="light-bg">
+        <header class="grid-middle">
+            <div class="col-8">
+                <a class="button" href="">work with us</a>
+            </div>
+            <div class="col-4-left">
+                <a class="hamburger-button"> 
+                    <div class="container"onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <!-- <div class="bar2"></div> -->
+                        <div class="bar3"></div>
+                    </div> 
+                </a>
+            </div>
+        </header>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu"> 
+            <nav> 
+                <br>
+                <br>
+                <a href="/about"> About </a>
+                <a href="/process"> Our Process </a>
+                <a href="/portfolio"> Our Work </a>
+                <a href="/contact"> Contact Us </a>
+                <br>
+                <a href="/index"> ~ Back to home ~ </a>
+            </nav>
         </div>
+
+        <section class="grid hide-md">
+            <div class="col-1"></div>
+            <div class="col-7 " data-aos="fade-in">
+                <img src="images/chandler-colllage.png" alt="">
+            </div>
+            <div class="col-4-middle padded">
+                <div class="padded-8 white-bg bump-left" data-aos="fade-in">
+                    <h4>Meet Chandler, the lead designer behind <i>The Verdi Collective</i>, who brings your digital dreams to life.</h4>
+                    <p><i>(fueled by Diet Coke and Taylor Swift playlists)</i></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid padded show-md">
+            <div class="col-12" data-aos="fade-in">
+                <img src="images/chandler-colllage.png" alt="">
+            </div>
+            <div class="col-12-middle padded">
+                <div class="padded-8 white-bg txtcenter" data-aos="fade-in">
+                    <h4>Meet Chandler, the lead designer behind <i>The Verdi Collective</i>, who brings your digital dreams to life.</h4>
+                    <p><i>(fueled by Diet Coke and Taylor Swift playlists)</i></p>
+                </div>
+            </div>
+        </section>
+    </section>  
+
+    <!-- Section 1 - About TVC/Chandler -->
+    <section class="grid padded light-bg">
+        <div class="col-2"></div>
+        <div class="col-8 txtcenter" data-aos="fade-in">
+            <h1>Crafted with passion, built for<i>your</i> story</h1>
+        </div>
+        <div class="col-2"></div>
+
+        <div class="col-1"></div>
+        <div class="col-5 padded-2 txtleft" data-aos="fade-in">
+            <p>Chandler's story began in the world of marketing and PR, but a love for weaving narratives and the collaborative spirit of small teams soon led her to the world of web design. A life-altering adventure exploring Australia in a trusty VW Caravelle became the catalyst for honing her coding skills. It was there, amidst the vast landscapes, that the seed of The Verdi Collective was sown.</p>
+            <p>The Verdi Collective, a name echoing the spirit of creativity and collaboration, is a female-led haven where we specialize in crafting beautiful and strategic websites for independent and creative businesses like yours.</p>
+        </div>
+        <div class="col-5 padded-2 txtleft" data-aos="fade-in">
+            <p>We are dreamers, storytellers and adventurers at heart who simply adore connecting with folks who share the fire - the passion for something truly special. That's why we enjoy projects where we collaborate closely, ensuring your website becomes a vibrant tapestry woven with your values and aspirations.</p>
+            <p>Speaking of journeys, where is Chandler now, you ask? Well, she's currently traversing Europe in a self-converted campervan (bigger than the last one!) - always on the search for new experiences! But fear not, her passion for listening and that infectious enthusiasm for your fiery ideas remain firmly in tow.</p>
+        </div>
+        <div class="col-1"></div>
+
+        <div class="col-2"></div>
+        <div class="col-8_md-12-middle padded-2 txtcenter" data-aos="fade-in">
+            <a class="button" href="/process">Focus on your business, let us handle the design</a>
+        </div>
+        <div class="col-2"></div>
     </section>
     <div class="col-12 light-bg"><img src="images/page-border.png" alt="roman mosaic border"></div>
 
     <!-- Section 2 - Match made in heaven -->
     <section class="grid padded banner-match">
         <div class="col-1"></div>
-        <div class="col-10 padded light-bg txtcenter">
+        <div class="col-10 padded white-bg txtcenter">
             <h2>We are a match <i>made in heaven</i> if you're...</h2>
             <div class="mob-show"><p>looking for something uniquely designed to reflect you and if you're seeking a collaborative experience.</p></div>
             <div class="mob-hide" id="typed-strings">
@@ -36,50 +102,51 @@ title: About Us
         </div>
         <div class="col-1"></div>
     </section>
-    <div class="col-12 light-bg"><img src="images/page-border.png" alt="roman mosaic border"></div>
 
 
-    <!-- Section 3 - Our values -->
+    <!-- Section 3 - Off Duty -->
     <section class="grid padded featured-bg txtcenter">
+        <div class="col-7_sm-12 padded txtleft" data-aos="fade-in">
+            <h2 class="hide-sm txtleft">The <i>off-duty</i> manual</h2>
+            <p class="hide-sm txtleft">A guide to what it's all about these days in the world of Chandler.</p>
+            <h2 class="show-sm txtcenter">The <i>off-duty</i> manual</h2>
+            <p class="show-sm txtcenter">A guide to what it's all about these days in the world of Chandler.</p>
+            <dl class="accordion">
+               <dt>- Things I love:</dt>
+               <dd>
+                   <p>In no particular order: basket bags, embroidery, exploring new countries, pretty much any Richard Curtis film, european markets, home decor, Swifties, block prints, Norbert, Bridgerton, dalmatians, tablescapes and brunch.</p> 
+               </dd>
+   
+               <dt>- Lessons I'm learning:</dt>
+               <dd>
+                   <p>The art of romanticising life. To accept your best and worst traits but always strive to improve on them anyway. That I am allowed to set boundaries. And to always, always drink more water!</p> 
+               </dd>
+   
+               <dt>- What I'm passionate about:</dt>
+               <dd>
+                   <p>I really love meaningful connections and heart-to-heart conversations. Give me a deep dive into personal reflections or a chance to learn something new any day! I also love shopping small, especially for unique and beautiful home decor pieces.</p>
+               </dd>
+
+               <dt>- Next up on the travel list:</dt>
+               <dd>
+                   <p>I'm still obsessed about our recent trip to India and would love to go back for longer next time... But my husband and I have some European adventures planned in our home-on-wheels this year. You'll see us on the road in Germany first!</p> 
+               </dd>
+           </dl>
+       </div>
+       <div class="col-1 hide-sm"></div>
+       <div class="col-4 border background-chandler-campervan padded hide-sm" data-aos="fade-in"></div>
+    </section>
+
+
+    <!-- Section 4 - CTA -->
+    <section class="grid padded banner-holding-laptop">
         <div class="col-1"></div>
-        <div class="col-10" data-aos="fade-in">
-            <h2>Our Ethos</h2>
-            <p>Our "pillars of strength" if you will...</p>
+        <div class="col-10 padded white-bg txtcenter" data-aos="fade-in">
+            <h2>We're curious now... What's <i>your</i> story?</h2>
+            <a class="button" href="/contact">Join the conversation</a>
         </div>
         <div class="col-1"></div>
-        <!-- grid -->
-        <div class="col-4_sm-12 padded pillar-1" data-aos="fade-in">
-            <h3><i>Authenticity</i></h3>
-            <p>Heart is at the core of what we do. We know you care deeply about your business, so we do too.</p>
-        </div>
-        <div class="col-4_sm-12 padded pillar-1" data-aos="fade-in">
-            <h3><i>Curiosity</i></h3>
-            <p>Look at the world in wonderment. Stay curious about people, listen to their stories and be inspired by them all.</p>
-        </div>
-        <div class="col-4_sm-12 padded pillar-1" data-aos="fade-in">
-            <h3><i>Inclusivity</i></h3>
-            <p>Play our part. Make a difference in the world. Stay inclusive, promote diversity and help the environment.</p>
-        </div>
     </section>
 
 
-    <!-- Section 4 - About CPD -->
-    <section class="grid padded light-bg">
-        <div class="col-7_md-12-middle padded" data-aos="fade-in">
-            <h2>Meet The Founder</h2>
-            <p> Hello, my name is Chandler and I am the founder and lead designer behind Verdi Studio. I started with a background of Marketing/Press and PR, and then I found myself as a Web Assistant for an independent mini-department store for a couple of years. It was here that I discovered a love of being a part of a small team who have a passion for originality and for sharing stories behind the brands.</p>
-            <p>I'm big fan of exploring the world, and in 2019 I took a career break to travel Australia for a couple of years with my other half, during which time we lived in a small VW Caravelle. Over the years I learnt how to code and discovered a new way of combining all my passions into one... And the concept of Verdi Studio was born.</p>
-            <p>A couple of years, a move back home and a new (bigger, self-coverted!) campervan later; here I am. You should know that I love listening above all else and I especially love it when people are fired up about something they're passionate about... I can't wait to work together!</p>
-        </div>
-        <div class="col-5_md-12 background-cpd" data-aos="fade-in"></div>
-    </section>
-
-
-    <!-- Section 5 - Fun faves -->
-    <section class="grid padded background-textured">
-        <div class="col-12 padded border-light txtcenter" data-aos="fade-in">
-            <h2 class="whitetxt">A few of my <i>favourite</i> things:</h2>
-            <img class="mob-hide" src="images/favourite-things.png" alt="">
-            <img class="mob-show" src="images/favourite-things-sm.png" alt="">
-        </div>
-    </section>
+    

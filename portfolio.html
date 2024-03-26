@@ -5,37 +5,76 @@ title: Our Portfolio
 <title>{{page.title}}</title>
 <!------ This is where our main content starts  ------->
     <!-- Header -->
-    {% include header.html %}  
+    <section class="light-bg">
+        <header class="grid-middle">
+            <div class="col-8">
+                <a class="button" href="">work with us</a>
+            </div>
+            <div class="col-4-left">
+                <a class="hamburger-button"> 
+                    <div class="container"onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <!-- <div class="bar2"></div> -->
+                        <div class="bar3"></div>
+                    </div> 
+                </a>
+            </div>
+        </header>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu"> 
+            <nav> 
+                <br>
+                <br>
+                <a href="/about"> About </a>
+                <a href="/process"> Our Process </a>
+                <a href="/portfolio"> Our Work </a>
+                <a href="/contact"> Contact Us </a>
+                <br>
+                <a href="/index"> ~ Back to home ~ </a>
+            </nav>
+        </div>
+
+        <section class="grid padded">
+            <div class="col-6-middle padded txtcenter" data-aos="fade-in">
+                <div class="white-bg padded-8 txtleft">
+                    <h1>“There is no such thing as a boring project. There are only boring executions."</h1>
+                    <p>— Irene Etzkorn</p>
+                </div>
+            </div>
+            <div class="col-6 background-chandler-winchester" data-aos="fade-in"></div>
+        </section>
+    </section>  
 
 
     <!-- Section 1 - Portfolio -->
-    <section class="grid-spaceAround background-deco padded">
-        <div class="col-2 mob-hide"></div>
-        <div class="col-4_sm-8 padded-2" data-aos="fade-in">
-            <a href="aroux.html"><img class="grayscale" src="images/mock-aroux.jpg" alt=""></a>
+    <section class="grid light-bg">
+        <div class="col-2"></div>
+        <div class="col-4-middle txtleft padded-2" data-aos="fade-in">
+            <img class="bump-up" src="images/villapaix-mockup.jpg" alt="">
+            <br>
+            <br>
+            <h3>Villa Paix </h3>
+            <p><i>A beautiful Mediterranean villa with a touch of Bali magic.</i></p>
         </div>
-        <div class="col-4_sm-8 padded-2" data-aos="fade-in">
-            <a href="asana.html"><img class="grayscale" src="images/mock-asanas.jpg"  alt=""></a>
+        <div class="col-4-middle txtleft padded-2" data-aos="fade-in">
+            <img class="bump-down" src="images/asanas-mockup.jpg" alt="">
+            <br>
+            <br>
+            <h3>Asanas</h3>
+            <p><i>Health + Fitness studio with a focus on personlised, holistic lifestyle changes.</i></p>
         </div>
-        <div class="col-2 mob-hide"></div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-4-middle txtleft padded-2" data-aos="fade-in">
+            <img class="bump-up" src="images/moongazy-mockup.jpg" alt="">
+            <br>
+            <br>
+            <h3>Moongazy</h3>
+            <p><i>Photography studio specialising in jewellery and lifestyle shoots.</i></p>
+        </div>
+        <div class="col-4-middle txtleft padded-2">
+            <h3 class="bump-up">Sit tight! More portfolio examples coming soon...</h3>
+        </div>
+        <div class="col-2"></div>
+    </section>    
 
-        <div class="col-2 mob-hide"></div>
-        <div class="col-4_sm-8 padded-2" data-aos="fade-in">
-            <a href="aapackaging.html"><img class="grayscale" src="images/mock-aap.jpg" alt=""></a>
-        </div>
-        <div class="col-4_sm-8 padded-2" data-aos="fade-in">
-            <a href="moongazy.html"><img class="grayscale" src="images/mock-moongazy.jpg" alt=""></a>
-        </div>
-        <div class="col-2 mob-hide"></div>
-    </section>
-
-
-    <!-- Enquire  -->
-    <section class="grid padded banner-carvings">
-        <div class="col-1"></div>
-        <div class="col-10 padded light-bg txtcenter" data-aos="fade-in">
-            <h1>Ready to start <i>your</i> journey towards your dream website?</h1>
-            <a href="/contact" class="button">Enquire Now</a>
-        </div>
-        <div class="col-1"></div>
-    </section>

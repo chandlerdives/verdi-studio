@@ -9,7 +9,7 @@
   
   img { max-width: 100%; }
   
-  body { color: #2A2A2A; }
+  body { color: #484848; }
   
   input:focus,
   select:focus,
@@ -28,30 +28,43 @@
   .txtright    { text-align: right;  }
   .txtcenter   { text-align: center; }
   
-  .padded     { padding: 5%; }
-  .padded-2   { padding: 2%; }
-  .padded-8   { padding: 8%; }
-  .padded-13  { padding: 13%; }
-  .padded-40  { padding: 40%; }
+  .padded     { padding: 5%;    }
+  .padded-2   { padding: 2%;    }
+  .padded-8   { padding: 8%;    }
+  .padded-15  { padding: 15%;   }
+  .padded-40  { padding: 40%;   }
   .padded-05  { padding: 0.5rem }
 
   .relative {position: relative;}
  
   /* bg-colours  */
   .featured-bg { background-color: #A9B2A1; }
-  .light-bg    { background-color: #F8F5F1; }
+  .light-bg    { background-color: #E0D8D0; }
   .dark-bg     { background-color: #52593C; }
   .grey-bg     { background-color: #484848; }
+  .white-bg    { background-color: #F8F5F1; }
 
   /* borders */
-  .border          { border: 1px solid #484848; }
-  .border-light    { border: 1px solid #F8F5F1; }
+  .border                 { border: 1px solid #484848;         }
+  .border-light           { border: 1px solid #F8F5F1;         }
+  .border-top             { border-top: 1px solid #484848;     }  
+  .border-bottom          { border-bottom: 1px solid #484848;  }
+  
+  .border-three-sides { 
+    border-left: 1px solid #484848;
+    border-right: 1px solid #484848;
+    border-bottom: 1px solid #484848;  
+  }
 
   /* bump */
-  .bump-right { margin-left: 6rem; }
-  .bump-left  { margin-left: -6rem; }
+  .bump-right    { margin-left: 6rem;  }
+  .bump-left     { margin-left: -6rem; }
+  .bump-up       { margin-top: -6rem;  }
+  .bump-down     { margin-top: 6rem;   }
+  .bump-overlap  { margin-top: 20rem; margin-left: 4rem; z-index: 999; }
 
-  .whitetxt { color: white; }
+  /* Rouned Corners */
+  .rounded-corners { border-radius: 50px; }
 
   
   
@@ -59,7 +72,7 @@
   h1 {
     font-family: 'Italiana', serif;
     font-size: 3em;
-    line-height: 1.5;
+    line-height: 1;
     margin-bottom: 1.5rem;
     color: #484848;
   }
@@ -69,23 +82,27 @@
     font-size: 2.8rem;
     line-height: 1;
     margin-bottom: 1rem;
-    color: #484848;
   }
 
   h3 {
     font-family: 'Italiana', serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1;
     margin-bottom: 1rem;
-    color: #484848;
   }
 
   h4 {
     font-family: 'Italiana', serif;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     line-height: 1;
     margin-bottom: 1rem;
-    color: #52593C
+  }
+
+  h5 {
+    font-family: 'Italiana', serif;
+    font-size: 8.7rem;
+    line-height: 1;
+    margin-bottom: 1rem;
   }
    
   p {
@@ -100,6 +117,10 @@
     text-decoration: none;
     color: #D09752;
   }
+
+  /* Text colours */
+  .whitetxt  { color: white; }
+  .greentxt  { color: #52593C; }
   
   
   /* ---------- Button Styles ----------- */
@@ -162,9 +183,10 @@
   }
   
   
-  /*--------------- Header and Footer ------------ */
+  /*--------------- Navigation ------------ */
+  /* Header */
   header {
-    padding: 0% 1%;
+    padding: 0.5% 3%;
     background: 0 0;
   }
   
@@ -190,6 +212,7 @@
     color: #D09752;
   }
   
+  /* Footer */
   footer nav a {
     font-family: 'Lato', sans-serif;
     margin: 0.4rem;
@@ -204,12 +227,33 @@
     color: #D09752;
   }
 
+  /* List */
   li {
     list-style-type: none;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 25px;
     margin: 0;
     padding: 0;
   }
 
+  /* Mini Nav */
+  nav a {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+    padding: 0.8rem 5rem;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    color: #D09752;
+  }
 
     /* ----------- Hamburger Nav -------------- */
   /* this is the button which changes into an x */
@@ -220,7 +264,7 @@
   
   .bar1, .bar2, .bar3 {
     width: 35px;
-    height: 2px;
+    height: 1px;
     background-color: #484848;
     margin: 9px 0;
     transition: 0.4s;
@@ -295,16 +339,39 @@
   }
   
   /* Default Responsive Styles (Dekstop and below) */
-  .mob-show {
-      display: none; 
-  }
-  
-  @media(max-width:48em) {
-      .mob-hide { display: none; }
-      .mob-show { display: block; }
+  .show-sm,
+  .show-md {
+	  display: none;
+}
 
-      h1 { font-size: 2rem; }
-      .img-mob { display: inline; margin-bottom: 1rem; }
+  /* Medium Screesn */
+  @media (max-width: 64em) {
+    .show-md { display: block; }
+    .hide-md { display: none;  }
+  }
+
+    .border-three-sides { border: 1px solid #484848; }
+
+    .md-txt-center { text-align: center;  }
+    .md-txt-left   { text-align: left;    }
+    .md-txt-right  { text-align: right;   }
+  
+  /* Small Screens */
+  @media (max-width:48em) {
+    .hide-sm { display: none;  }
+    .show-sm { display: block; }
+
+    .border-three-sides { border: 1px solid #484848; }
+
+    .sm-txt-center { text-align: center;  }
+    .sm-txt-left   { text-align: left;    }
+    .sm-txt-right  { text-align: right;   }
+
+    .reverse { flex-direction: row-reverse; }
+
+    h1 { font-size: 2rem; }
+    h5 { font-size: 5rem; }
+    .img-mob { display: inline; margin-bottom: 1rem; }
   }
   
   
@@ -331,15 +398,29 @@
     background-attachment: scroll;
   }
 
-  .banner-header {
+  .banner-front-page-sm {
     background-image: url(images/page-banner.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: scroll;
+    background-attachment: fixed;
   }
 
-  .banner-work-together {
-    background-image: url(images/banner-contact-me.jpg);
+  .banner-mosaic {
+    background-image: url(images/banner-mosaic-horses.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .banner-mosaic-ducks {
+    background-image: url(images/banner-mosaic-ducks.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .banner-bust {
+    background-image: url(images/banner-bust.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -352,15 +433,57 @@
     background-attachment: fixed;
   }
 
-  .banner-arches {
-    background-image: url(images/banner-arches.png);
+  .banner-match {
+    background-image: url(images/banner-match.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
   }
 
-  .banner-match {
-    background-image: url(images/banner-match.jpg);
+  .banner-girls-in-motion {
+    background-image: url(images/banner-girls-in-motion.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .banner-in-motion {
+    background-image: url(images/banner-in-motion.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .banner-spotlight {
+    background-image: url(images/banner-spotlight.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .banner-holding-laptop {
+    background-image: url(images/banner-holding-laptop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .banner-muse {
+    background-image: url(images/banner-statue.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .banner-tailored {
+    background-image: url(images/banner-ceiling-painting.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .banner-pillars {
+    background-image: url(images/banner-pillars.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -377,43 +500,94 @@
 
 
   /* ---------- Background Images ------------ */
-  .background-textured {
-    background-image: url(images/textured-background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-  }
-
-  .background-deco {
-    background-image: url(images/decorative-background.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-  }
-
-  .background-contact {
-    background-image: url(images/rome-statue.jpg);
-    background-size: cover;
-    background-position: top;
-    background-attachment: scroll;
-    min-height: 35em;
-  }
-
-  .background-about {
-    background-image: url(images/about-studio2.jpg);
+  .background-phone {
+    background-image: url(images/homepage-main-pic.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
     min-height: 35em;
   }
 
-  .background-cpd {
-    background-image: url(images/about-chandler2.jpg);
+  .background-ipad-sofa {
+    background-image: url(images/ipad-mockup-sofa.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
     min-height: 35em;
   }
+
+  .background-chandler-guildhall {
+    background-image: url(images/chandler-guildhall.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    min-height: 35em;
+  }
+
+  .background-chandler {
+    background-image: url(images/chandler-divers.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    min-height: 35em;
+  }
+
+  .background-chandler-campervan {
+    background-image: url(images/chandler-campervanjpg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    min-height: 30em;
+  }
+
+  .background-chandler-winchester {
+    background-image: url(images/chandler-winchester.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    min-height: 30em;
+  }
+
+  .background-chandler-laptop {
+    background-image: url(images/chandler-laptop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    min-height: 30em;
+  }
+
+  .background-ipad-mockup {
+    background-image: url(images/ipad-group-mockup.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    min-height: 30em;
+  }
+
+  .background-amore-mockup {
+    background-image: url(images/amore-mockup.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    min-height: 10em;
+  }
+
+  .background-solis-mockup {
+    background-image: url(images/solis-mockup.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    min-height: 30em;
+  }
+
+  .background-parea-mockup {
+    background-image: url(images/parea-mockup.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    min-height: 30em;
+  }
+
   
   .background-aroux {
     background-image: url(images/aroux-background.jpg);
@@ -443,21 +617,15 @@
     background-attachment: fixed;
   }
 
-  .pillar-1 {
-    background-image: url(images/pillar1.png);
+  .background-villapaix {
+    background-image: url(images/villa-paix-mockup.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
-    min-height: 40em;
+    min-height: 35em;
   }
 
-  .background-florence {
-    background-image: url(images/florence-architecture.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-    min-height: 20em;
-  }
+ 
 
   
   /* ------------------ Photo Edits ---------------- */
@@ -465,8 +633,12 @@
     max-width: 100%;
   }
 
-  .img-sm {
+  .img-md {
     max-width: 80%;
+  }
+
+  .img-sm {
+    max-width: 50%;
   }
 
   .grayscale {
@@ -490,18 +662,37 @@
   }
   .accordion dt{
     font-family: 'Lato', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-style: italic;
     padding: 1rem;
     margin: 1rem 0;
-    display:block;
-    color: #5F6B36;
-    border-bottom: solid 1px #5F6B36;
+    display: block;
+    color: inherit;
+    border-bottom: solid 1px #484848;
     position: relative;
     text-decoration: none;
   }
   .accordion dd {
     padding: 2rem;
-    border-bottom: solid 1px #5F6B36;
+    border-bottom: solid 1px #484848;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .accordion-white dt {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    display: block;
+    color: inherit;
+    border-bottom: solid 1px white;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .accordion-white dd {
+    padding: 2rem;
+    border-bottom: solid 1px white;
     font-family: 'Lato', sans-serif;
   }
   
@@ -520,10 +711,11 @@
     -o-transition: all .35s;
     transition: all .35s;
   }
-  
+
   .accordion dt.open::after {
     transform:rotate(45deg);
   }
+  
 
 
   /* ------------ Form ----------- */

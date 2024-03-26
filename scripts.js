@@ -33,7 +33,6 @@ function myFunction(x) {
   x.classList.toggle("change");
 }
 
-
 // ------ Cookie Banner
 document.addEventListener("DOMContentLoaded", () => {
   let cookiePopup = document.getElementById("cookiePopup");
